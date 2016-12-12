@@ -21,4 +21,4 @@ foreach (@files ){
 
 close $fh or die "can't read close '$fp': $OS_ERROR";
 
-system("HCopy -A -D -C analysis.conf -S targetlist.txt");
+system("HCopy -A -D -C configs/analysis.conf -S targetlist.txt");
