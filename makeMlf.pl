@@ -4,13 +4,6 @@ use File::Basename;
 
 my ($file, $line, $fname, @labs, @words, $w);
 
-# this script makes an mlf out of a list of file names and 
-# corresponding prompts - ie in the format
-# fileid prompt
-# fileid prompt
-# "        "
-# The prompts are automatically converted to upper case.
-
 my $mlfFilename = "mlf/wordlist.mlf";
 my $dir = "transcript/*";
 my @files = glob( $dir );
