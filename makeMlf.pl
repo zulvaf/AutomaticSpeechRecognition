@@ -4,7 +4,7 @@ use File::Basename;
 
 my ($file, $line, $fname, @labs, @words, $w);
 
-my $mlfFilename = "mlf/wordlist.mlf";
+my $mlfFilename = "mlf/wordlist0.mlf";
 my $dir = "transcript/*";
 my @files = glob( $dir );
 
