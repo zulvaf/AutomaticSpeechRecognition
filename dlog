@@ -18,7 +18,6 @@ aylan
 azabanar
 bachir
 bahagiakan
-berapa?
 berdaampak
 bismillahirahmanirrahim
 bitaqwallahi
@@ -28,7 +27,6 @@ fidunya
 garindo
 gawharatal
 grogol-kalideres
-hadir.
 hadiwijoyo
 huuu
 ilia
@@ -58,18 +56,16 @@ puty
 qowi
 revita
 robbana
-s.e.
 s.ip
-s.t.
 sabdatama
 sayang-mu
+sent-end
+sent-start
 sholi
 sinak
 subtansial
 sulthonik
 syakirin
-syifa.
-telekomunikasi.
 tiyasno
 tuntunlah
 tutupilah
@@ -91,40 +87,39 @@ wasohbihi
 wassalamu'alaikum
 yaazim
 yambagi
-yani?
 yuafini'
 yuamazidah
 
 Dictionary Usage Statistics
 ---------------------------
   Dictionary    TotalWords WordsUsed  TotalProns PronsUsed
-     lexicon    179208       7170     182643       7807
-        dict      7170       7170       7807       7807
+     lexicon    179208       7174     182643       7811
+       dict1      7174       7174       7811       7811
 
-7262 words required, 92 missing
+7261 words required, 87 missing
 
 New Phone Usage Counts
 ---------------------
-  1. s     :  2606
-  2. e     :  2052
+  1. s     :  2609
+  2. e     :  2056
   3. r     :  3168
-  4. i     :  4280
+  4. i     :  4283
   5. b     :  1489
-  6. u     :  2614
-  7. m     :  2549
-  8. l     :  1934
-  9. a     :  8687
- 10. n     :  3625
- 11. t     :  2424
+  6. u     :  2615
+  7. m     :  2550
+  8. l     :  1935
+  9. a     :  8689
+ 10. n     :  3627
+ 11. t     :  2426
  12. p     :  1698
  13. h     :  1127
  14. d     :  1650
  15. ai    :   199
- 16. k     :  2596
+ 16. k     :  2598
  17. ng    :  1188
- 18. y     :   374
+ 18. y     :   375
  19. @     :  3029
- 20. o     :  1952
+ 20. o     :  1953
  21. g     :   720
  22. ny    :   605
  23. z     :   183
@@ -138,4 +133,4 @@ New Phone Usage Counts
  31. oi    :    21
  32. au    :    79
 
-Dictionary dict created
+Dictionary dict1 created
