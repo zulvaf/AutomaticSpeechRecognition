@@ -41,6 +41,8 @@ foreach $file (@files ){
       
       @words = split(/\s+/,$labs[1]);
       foreach $w (@words) {
+        $w = lc $w;
+        $w =~ s/[?.!,;]?$//;
         $w =~ s/\.//;
         printf(MLF "%s\n", $w);
       }

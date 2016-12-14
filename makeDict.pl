@@ -46,6 +46,7 @@ foreach $file (@files ){
       		@words = split(/\s+/,$labs[1]);
       		foreach $w (@words) {
         		$w =~ s/[?.!,;]?$//;
+        		$w =~ s/[?.!,;]?$//;
         		$w = lc $w;
         		push @wlist, $w;
       		}
