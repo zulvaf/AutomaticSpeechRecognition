@@ -9,8 +9,8 @@
 # on Windows: ..\bin\julius -input mic -C voxshell.jconf -gramlist grammars_windows -plugindir plugin\windows
 
 # VoxForge configurations:
--h hmms/hmm9/hmmdefs
-#-hlist ../tutorial/tiedlist
+-h hmms/hmm15/hmmdefs
+-hlist tiedlist
 #-h ../howto/acoustic_model/hmmdefs
 #-hlist ../howto/acoustic_model/tiedlist
 

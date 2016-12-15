@@ -6,14 +6,17 @@ Stat: rdhmmdef: limit check passed
 Stat: rdhmmdef: this HMM does not need multipath handling
 Stat: rdhmmdef: no <SID> embedded
 Stat: rdhmmdef: assign SID by the order of appearance
-Stat: init_phmm: defined HMMs:    33
-Stat: init_phmm: logical names:    33
+Stat: init_phmm: defined HMMs:  2513
+Stat: init_phmm: loading ascii hmmlist
+Stat: init_phmm: logical names: 14772 in HMMList
 Stat: init_phmm: base phones:    33 used in logical
 Stat: init_phmm: finished reading HMM definitions
+STAT: making pseudo bi/mono-phone for IW-triphone
+Stat: hmm_lookup: 402 pseudo phones are added to logical HMM list
 Warning: init_phmm: no model named as "sp", no short pause model assigned
 STAT: *** AM00 _default loaded
 STAT: *** loading LM00 _default
-Stat: init_voca: read 182672 words
+Stat: init_voca: read 182670 words
 Stat: init_ngram: reading in binary n-gram from binary
 Stat: ngram_read_bin: file version: 5
 Stat: ngram_read_bin_v5: this is forward 3-gram file
@@ -51,7 +54,7 @@ STAT: 1 MFCC modules created
 STAT: [2] create recognition processing instance(s) with AM and LM
 STAT: composing recognizer instance SR00 _default (AM00 _default, LM00 _default)
 STAT: Building HMM lexicon tree
-STAT: lexicon size: 1488561+48054=1536615
+STAT: lexicon size: 2018274+5914=2024188
 STAT: coordination check passed
 STAT: make successor lists for unigram factoring
 STAT: done
@@ -62,7 +65,6 @@ Stat: outprob_init: state-level mixture PDFs, use calc_mix()
 Stat: addlog: generating addlog table (size = 1953 kB)
 Stat: addlog: addlog table generated
 STAT: [4] prepare MFCC storage(s)
-STAT: [5] prepare for real-time decoding
 STAT: All init successfully done
 
 STAT: ###### initialize input device
@@ -82,7 +84,8 @@ Configuration of Modules
 
  Acoustic Model (with input parameter spec.):
  - AM00 "_default"
-	hmmfilename=hmms/hmm9/hmmdefs
+	hmmfilename=hmms/hmm15/hmmdefs
+	hmmmapfilename=tiedlist
 
  Language Model:
  - LM00 "_default"
@@ -130,8 +133,8 @@ Acoustic Model(s)
 [AM00 "_default"]
 
  HMM Info:
-    33 models, 99 states, 99 mpdfs, 99 Gaussians are defined
-	      model type = context dependency handling OFF
+    2513 models, 1400 states, 1400 mpdfs, 1400 Gaussians are defined
+	      model type = context dependency handling ON
       training parameter = MFCC_D_A_0
 	   vector length = 39
 	number of stream = 1
@@ -164,15 +167,15 @@ Language Model(s)
 	           pass1 = 2-gram in the forward n-gram
 
  Vocabulary Info:
-        vocabulary size  = 182672 words, 1472879 models
+        vocabulary size  = 182670 words, 1472864 models
         average word len = 8.1 models, 24.2 states
        maximum state num = 276 nodes per word
        transparent words = not exist
        words under class = not exist
 
  Parameters:
-	(-silhead)head sil word = 182670: "<s> @0.000000 [<s>] sil(sil)"
-	(-siltail)tail sil word = 182671: "</s> @0.000000 [</s>] sil(sil)"
+	(-silhead)head sil word = 182668: "<s> @0.000000 [<s>] sil(sil)"
+	(-siltail)tail sil word = 182669: "</s> @0.000000 [</s>] sil(sil)"
 
 ------------------------------------------------------------
 Recognizer(s)
@@ -180,24 +183,24 @@ Recognizer(s)
 [SR00 "_default"]  AM00 "_default"  +  LM00 "_default"
 
  Lexicon tree:
-	 total node num = 1536615
-	  root node num =    183
+	 total node num = 2024188
+	  root node num =    905
 	(148 hi-freq. words are separated from tree lexicon)
-	  leaf node num = 182672
-	 fact. node num = 182672
+	  leaf node num = 182670
+	 fact. node num = 182670
 
  Inter-word N-gram cache: 
-	root node to be cached = 149 / 182 (isolated only)
+	root node to be cached = 266 / 904 (isolated only)
 	word ends to be cached = 179235 (all)
-	  max. allocation size = 106MB
-	(-lmp)  pass1 LM weight = 5.0  ins. penalty = -1.0
-	(-lmp2) pass2 LM weight = 6.0  ins. penalty = +0.0
+	  max. allocation size = 190MB
+	(-lmp)  pass1 LM weight = 8.0  ins. penalty = -2.0
+	(-lmp2) pass2 LM weight = 8.0  ins. penalty = -2.0
 	(-transp)trans. penalty = +0.0 per word
 	(-cmalpha)CM alpha coef = 0.050000
 
  Search parameters: 
 	    multi-path handling = no
-	(-b) trellis beam width = 400 (-1 or not specified - guessed)
+	(-b) trellis beam width = 800 (-1 or not specified - guessed)
 	(-bs)score pruning thres= disabled
 	(-n)search candidate num= 1
 	(-s)  search stack size = 500
@@ -208,6 +211,9 @@ Recognizer(s)
 	(-sb)2nd scan beamthres = 80.0 (in logscore)
 	(-n)        search till = 1 candidates found
 	(-output)    and output = 1 candidates out of above
+	 IWCD handling:
+	   1st pass: approximation (use 3-best of same LC)
+	   2nd pass: loose (apply when hypo. is popped and scanned)
 	 factoring score: 1-gram prob. (statically assigned beforehand)
 	short pause segmentation = off
 	fall back on search fail = off, returns search failure
@@ -215,7 +221,7 @@ Recognizer(s)
 ------------------------------------------------------------
 Decoding algorithm:
 
-	1st pass input processing = real time, on-the-fly
+	1st pass input processing = buffered, batch
 	1st pass method = 1-best approx. generating indexed trellis
 	output word confidence measure based on search-time scores
 
@@ -224,17 +230,12 @@ FrontEnd:
 
  Input stream:
 	             input type = waveform
-	           input source = microphone
-	    device API          = default
-	          sampling freq. = 16000 Hz
-	         threaded A/D-in = supported, on
+	           input source = waveform file
+	          input filelist = wavlst
+	          sampling freq. = 16000 Hz required
+	         threaded A/D-in = supported, off
 	   zero frames stripping = on
-	         silence cutting = on
-	             level thres = 2000 / 32767
-	         zerocross thres = 60 / sec.
-	             head margin = 300 msec.
-	             tail margin = 400 msec.
-	              chunk size = 1000 samples
+	         silence cutting = off
 	    long-term DC removal = off
 	    long-term DC removal = off
 	    level scaling factor = 1.00 (disabled)
@@ -244,27 +245,67 @@ FrontEnd:
 ----------------------- System Information end -----------------------
 
 ### read waveform input
-Stat: capture audio at 16000Hz
-Stat: adin_alsa: latency set to 32 msec (chunk = 512 bytes)
-Error: adin_alsa: unable to get pcm info from card control
-Warning: adin_alsa: skip output of detailed audio device info
-STAT: AD-in thread created
-Warning: strip: sample 119-191 has zero value, stripped
-WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
-Warning: input buffer overflow: some input may be dropped, so disgard the input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A001.wav
+STAT: 108652 samples (6.79 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 2294 generated, 1339 pushed, 124 nodes popped in 677
 
-WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
-Warning: input buffer overflow: some input may be dropped, so disgard the input
+### read waveform input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A002.wav
+STAT: 83853 samples (5.24 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 1623 generated, 1085 pushed, 106 nodes popped in 522
 
-WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
-Warning: input buffer overflow: some input may be dropped, so disgard the input
+### read waveform input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A003.wav
+STAT: 117118 samples (7.32 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 3213 generated, 1950 pushed, 204 nodes popped in 730
 
-WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
-Warning: input buffer overflow: some input may be dropped, so disgard the input
+### read waveform input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A004.wav
+STAT: 113583 samples (7.10 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 999 generated, 873 pushed, 82 nodes popped in 708
 
-WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
-Warning: input buffer overflow: some input may be dropped, so disgard the input
+### read waveform input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A005.wav
+STAT: 91857 samples (5.74 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 1254 generated, 976 pushed, 70 nodes popped in 572
 
-WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
-Warning: input buffer overflow: some input may be dropped, so disgard the input
+### read waveform input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A006.wav
+STAT: 125758 samples (7.86 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 1266 generated, 1070 pushed, 68 nodes popped in 784
 
+### read waveform input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A007.wav
+STAT: 126809 samples (7.93 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 3670 generated, 2562 pushed, 280 nodes popped in 791
+
+### read waveform input
+Stat: adin_file: input speechfile: sounds/A009/A21LJL009A008.wav
+STAT: 147154 samples (9.20 sec.)
+STAT: ### speech analysis (waveform -> MFCC)
+### Recognition: 1st pass (LR beam)
+### Recognition: 2nd pass (RL heuristic best-first)
+STAT: 00 _default: 3570 generated, 2299 pushed, 189 nodes popped in 918
+
+### read waveform input

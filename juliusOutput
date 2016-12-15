@@ -1,0 +1,91 @@
+STAT: include config: simpleDM.jconf
+
+------
+pass1_best: <s> skep brahman wait cenderung memasukan orangnya dan menggusur kader partai lain </s>
+pass1_best_wordseq: <s> skep brahman wait cenderung memasukan orangnya dan menggusur kader partai lain </s>
+pass1_best_phonemeseq: sil | s k @ p | b r a h m a n | w a i t | c @ n d @ r u ng | m @ m a s u k a n | o r a ng ny a | d a n | m @ ng g u s u r | k a d @ r | p a r t ai | l a i n | sil
+pass1_best_score: -22972.498047
+sentence1: <s> skep brahman white cenderung memasukan orangnya dan menggusur kader partai lain </s>
+wseq1: <s> skep brahman white cenderung memasukan orangnya dan menggusur kader partai lain </s>
+phseq1: sil | s k @ p | b r a h m a n | w a i t | c @ n d @ r u ng | m @ m a s u k a n | o r a ng ny a | d a n | m @ ng g u s u r | k a d @ r | p a r t a i | l a i n | sil
+cmscore1: 0.324 0.310 0.846 0.150 0.969 0.682 0.618 0.920 0.991 0.978 0.160 0.687 1.000
+score1: -23019.279297
+
+------
+pass1_best: <s> abstain itu kan artinya tidak setuju </s>
+pass1_best_wordseq: <s> abstain itu kan artinya tidak setuju </s>
+pass1_best_phonemeseq: sil | a b s t ai n | i t u | k a n | a r t i ny a | t i d a k | s @ t u j u | sil
+pass1_best_score: -16659.830078
+sentence1: <s> abstain itu kan artinya tidak setuju </s>
+wseq1: <s> abstain itu kan artinya tidak setuju </s>
+phseq1: sil | a b s t ai n | i t u | k a n | a r t i ny a | t i d a k | s @ t u j u | sil
+cmscore1: 0.210 0.756 0.452 0.905 0.479 0.884 0.450 1.000
+score1: -16697.953125
+
+------
+pass1_best: <s> acara yang dimulai tepat skema zuhur itu dibuka oleh kartu syukur </s>
+pass1_best_wordseq: <s> acara yang dimulai tepat skema zuhur itu dibuka oleh kartu syukur </s>
+pass1_best_phonemeseq: sil | a c a r a | y a ng | d i m u l a i | t @ p a t | s k @ m a | z u h u r | i t u | d i b u k a | o l e h | k a r t u | sy u k u r | sil
+pass1_best_score: -24267.318359
+sentence1: <s> acara yang dimulai tepat xtra zuri itu dibuka oleh <euh> abdul syukur </s>
+wseq1: <s> acara yang dimulai tepat xtra zuri itu dibuka oleh <euh> abdul syukur </s>
+phseq1: sil | a c a r a | y a ng | d i m u l a i | t @ p a t | s t r a | z u r i | i t u | d i b u k a | o l e h | sil | a b d u l | sy u k u r | sil
+cmscore1: 0.583 0.664 0.683 0.536 0.610 0.109 0.244 0.884 0.979 0.658 0.063 0.668 0.528 1.000
+score1: -24292.013672
+
+------
+pass1_best: <s> kartu yang duduk di depan menodongkan pisau kepada hama kala </s>
+pass1_best_wordseq: <s> kartu yang duduk di depan menodongkan pisau kepada hama kala </s>
+pass1_best_phonemeseq: sil | k a r t u | y a ng | d u d u k | d i | d @ p a n | m @ n o d o ng k a n | p i s au | k @ p a d a | h a m a | k a l a | sil
+pass1_best_score: -22827.681641
+sentence1: <s> kartu yang duduk di depan menodongkan pisau kepada hemat kala </s>
+wseq1: <s> kartu yang duduk di depan menodongkan pisau kepada hemat kala </s>
+phseq1: sil | k a r t u | y a ng | d u d u k | d i | d @ p a n | m @ n o d o ng k a n | p i s au | k @ p a d a | h e m a t | k a l a | sil
+cmscore1: 0.261 0.501 0.992 0.980 0.953 0.786 0.981 0.975 0.884 0.205 0.264 1.000
+score1: -22842.742188
+
+------
+pass1_best: <s> ada dan uu dan ferry kecil di kampus pun sih </s>
+pass1_best_wordseq: <s> ada dan uu dan ferry kecil di kampus pun sih </s>
+pass1_best_phonemeseq: sil | a d a | d a n | u u | d a n | f e r i | k @ c i l | d i | k a m p u s | p u n | s i h | sil
+pass1_best_score: -18985.904297
+sentence1: <s> ada danau dan ferry kecil di kampus pun shiah </s>
+wseq1: <s> ada danau dan ferry kecil di kampus pun shiah </s>
+phseq1: sil | a d a | d a n au | d a n | f e r i | k @ c i l | d i | k a m p u s | p u n | s i a h | sil
+cmscore1: 0.339 0.715 0.241 0.567 0.387 0.837 0.963 0.323 0.782 0.197 1.000
+score1: -19014.666016
+
+------
+pass1_best: <s> ada informasi bahwa pabrik syukur membeli senjata dari pasar gelap cipacing </s>
+pass1_best_wordseq: <s> ada informasi bahwa pabrik syukur membeli senjata dari pasar gelap cipacing </s>
+pass1_best_phonemeseq: sil | a d a | i n f o r m a s i | b a h w a | p a b r i k | sy u k u r | m @ m b @ l i | s @ n j a t a | d a r i | p a s a r | g @ l a p | c i p a c i ng | sil
+pass1_best_score: -25787.853516
+sentence1: <s> ada informasi bahwa pabrik syukur membeli senjata dari pasar gelap cipacing </s>
+wseq1: <s> ada informasi bahwa pabrik syukur membeli senjata dari pasar gelap cipacing </s>
+phseq1: sil | a d a | i n f o r m a s i | b a h w a | p a b r i k | sy u k u r | m @ m b @ l i | s @ n j a t a | d a r i | p a s a r | g @ l a p | c i p a c i ng | sil
+cmscore1: 0.455 0.631 0.997 0.301 0.318 0.583 0.925 0.683 0.991 0.877 0.926 0.218 1.000
+score1: -25770.783203
+
+------
+pass1_best: <s> ada informasi dari ucok bahwa langkah jaksa agung diboikot oleh stafnya </s>
+pass1_best_wordseq: <s> ada informasi dari ucok bahwa langkah jaksa agung diboikot oleh stafnya </s>
+pass1_best_phonemeseq: sil | a d a | i n f o r m a s i | d a r i | u c o k | b a h w a | l a ng k a h | j a k s a | a g u ng | d i b oi k o t | o l e h | s t a f ny a | sil
+pass1_best_score: -26407.626953
+sentence1: <s> ada informasi dari kuto pak bank palangka jaksa agung ber di boikot oleh stafnya </s>
+wseq1: <s> ada informasi dari kuto pak bank palangka jaksa agung ber di boikot oleh stafnya </s>
+phseq1: sil | a d a | i n f o r m a s i | d a r i | k u t o | p a k | b a ng | p a l a ng k a | j a k s a | a g u ng | b @ r | d i | b o i k o t | o l e h | s t a f ny a | sil
+cmscore1: 0.480 0.890 0.993 0.945 0.121 0.068 0.653 0.173 0.996 0.435 0.034 0.098 0.638 0.731 0.530 1.000
+score1: -26478.552734
+
+------
+pass1_best: <s> ada keanehan pada biaya makan pjkm bulan januari sebanyak enam ribu lima ratus </s>
+pass1_best_wordseq: <s> ada keanehan pada biaya makan pjkm bulan januari sebanyak enam ribu lima ratus </s>
+pass1_best_phonemeseq: sil | a d a | k @ a n @ h a n | p a d a | b i a y a | m a k a n | p e j e k a e m | b u l a n | j a n u a r i | s @ b a ny a k | @ n a m | r i b u | l i m a | r a t u s | sil
+pass1_best_score: -29932.111328
+sentence1: <s> ada keanehan pada di jayakumar jan p dkm bulan januari sebanyak enam ribu lima ratus </s>
+wseq1: <s> ada keanehan pada di jayakumar jan p dkm bulan januari sebanyak enam ribu lima ratus </s>
+phseq1: sil | a d a | k @ a n @ h a n | p a d a | d i | j a y a k u m a r | j a n | p e | d e k a e m | b u l a n | j a n u a r i | s @ b a ny a k | @ n a m | r i b u | l i m a | r a t u s | sil
+cmscore1: 0.331 0.959 0.495 0.390 0.808 0.095 0.155 0.159 0.061 0.987 0.576 0.943 0.952 0.812 0.999 0.131 1.000
+score1: -29979.644531
+
+------
