@@ -1,0 +1,270 @@
+STAT: jconf successfully finalized
+STAT: *** loading AM00 _default
+Stat: init_phmm: Reading in HMM definition
+Stat: rdhmmdef: ascii format HMM definition
+Stat: rdhmmdef: limit check passed
+Stat: rdhmmdef: this HMM does not need multipath handling
+Stat: rdhmmdef: no <SID> embedded
+Stat: rdhmmdef: assign SID by the order of appearance
+Stat: init_phmm: defined HMMs:    33
+Stat: init_phmm: logical names:    33
+Stat: init_phmm: base phones:    33 used in logical
+Stat: init_phmm: finished reading HMM definitions
+Warning: init_phmm: no model named as "sp", no short pause model assigned
+STAT: *** AM00 _default loaded
+STAT: *** loading LM00 _default
+Stat: init_voca: read 182672 words
+Stat: init_ngram: reading in binary n-gram from binary
+Stat: ngram_read_bin: file version: 5
+Stat: ngram_read_bin_v5: this is forward 3-gram file
+stat: ngram_read_bin_v5: reading 1-gram
+stat: ngram_read_bin_v5: reading 2-gram
+stat: ngram_read_bin_v5: reading 3-gram
+Stat: ngram_read_bin: making entry name index
+Stat: init_ngram: found unknown word entry "<unk>"
+Stat: init_ngram: finished reading n-gram
+Stat: init_ngram: mapping dictonary words to n-gram entries
+Warning: ngram_lookup: "!sil" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "esil" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "esilews" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "esilfc" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "esilfc.com" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "sent-end" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "sent-start" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "sil-s" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "silbb" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "siliba" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "silsor" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "sily" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "silyol" not exist in N-gram, treat as unknown
+Warning: ngram_lookup: "uusil" not exist in N-gram, treat as unknown
+Stat: init_ngram: finished word-to-ngram mapping
+Warning: BOS word "<s>" has unigram prob of "-99"
+Warning: assigining value of EOS word "</s>": -1.591803
+STAT: *** LM00 _default loaded
+STAT: ------
+STAT: All models are ready, go for final fusion
+STAT: [1] create MFCC extraction instance(s)
+STAT: *** create MFCC calculation modules from AM
+STAT: AM 0 _default: create a new module MFCC01
+STAT: 1 MFCC modules created
+STAT: [2] create recognition processing instance(s) with AM and LM
+STAT: composing recognizer instance SR00 _default (AM00 _default, LM00 _default)
+STAT: Building HMM lexicon tree
+STAT: lexicon size: 1488561+48054=1536615
+STAT: coordination check passed
+STAT: make successor lists for unigram factoring
+STAT: done
+STAT:  1-gram factoring values has been pre-computed
+STAT: SR00 _default composed
+STAT: [3] initialize for acoustic HMM calculation
+Stat: outprob_init: state-level mixture PDFs, use calc_mix()
+Stat: addlog: generating addlog table (size = 1953 kB)
+Stat: addlog: addlog table generated
+STAT: [4] prepare MFCC storage(s)
+STAT: [5] prepare for real-time decoding
+STAT: All init successfully done
+
+STAT: ###### initialize input device
+----------------------- System Information begin ---------------------
+JuliusLib rev.4.3.1 (fast)
+
+Engine specification:
+ -  Base setup   : fast
+ -  Supported LM : DFA, N-gram, Word
+ -  Extension    : WordsInt
+ -  Compiled by  : gcc -O6 -fomit-frame-pointer
+
+------------------------------------------------------------
+Configuration of Modules
+
+ Number of defined modules: AM=1, LM=1, SR=1
+
+ Acoustic Model (with input parameter spec.):
+ - AM00 "_default"
+	hmmfilename=hmms/hmm9/hmmdefs
+
+ Language Model:
+ - LM00 "_default"
+	vocabulary filename=lexicon1
+	n-gram  filename=binary (binary format)
+
+ Recognizer:
+ - SR00 "_default" (AM00, LM00)
+
+------------------------------------------------------------
+Speech Analysis Module(s)
+
+[MFCC01]  for [AM00 _default]
+
+ Acoustic analysis condition:
+	       parameter = MFCC_0_D_A (39 dim. from 12 cepstrum + c0)
+	sample frequency = 16000 Hz
+	   sample period =  625  (1 = 100ns)
+	     window size =  400 samples (25.0 ms)
+	     frame shift =  160 samples (10.0 ms)
+	    pre-emphasis = 0.97
+	    # filterbank = 24
+	   cepst. lifter = 22
+	      raw energy = False
+	energy normalize = False
+	    delta window = 2 frames (20.0 ms) around
+	      acc window = 2 frames (20.0 ms) around
+	     hi freq cut = OFF
+	     lo freq cut = OFF
+	 zero mean frame = OFF
+	       use power = OFF
+	             CVN = OFF
+	            VTLN = OFF
+
+    spectral subtraction = off
+
+ cep. mean normalization = no
+ cep. var. normalization = no
+
+	 base setup from = Julius defaults
+
+------------------------------------------------------------
+Acoustic Model(s)
+
+[AM00 "_default"]
+
+ HMM Info:
+    33 models, 99 states, 99 mpdfs, 99 Gaussians are defined
+	      model type = context dependency handling OFF
+      training parameter = MFCC_D_A_0
+	   vector length = 39
+	number of stream = 1
+	     stream info = [0-38]
+	cov. matrix type = DIAGC
+	   duration type = NULLD
+	max mixture size = 1 Gaussians
+     max length of model = 5 states
+     logical base phones = 33
+       model skip trans. = not exist, no multi-path handling
+
+ AM Parameters:
+        Gaussian pruning = none (full computation)  (-gprune)
+    short pause HMM name = "sp" specified but not assigned  (-sp)
+  cross-word CD on pass1 = handle by approx. (use 3-best of same LC)
+
+------------------------------------------------------------
+Language Model(s)
+
+[LM00 "_default"] type=n-gram
+
+ N-gram info:
+	            spec = 3-gram, forward (left-to-right)
+	        OOV word = <unk>(id=32)
+	        OOV size = 15 words in dict
+	    wordset size = 179235
+	  1-gram entries =     179235  (  1.4 MB)
+	  2-gram entries =    2026095  ( 23.8 MB) (15% are valid contexts)
+	  3-gram entries =     958584  (  9.4 MB)
+	           pass1 = 2-gram in the forward n-gram
+
+ Vocabulary Info:
+        vocabulary size  = 182672 words, 1472879 models
+        average word len = 8.1 models, 24.2 states
+       maximum state num = 276 nodes per word
+       transparent words = not exist
+       words under class = not exist
+
+ Parameters:
+	(-silhead)head sil word = 182670: "<s> @0.000000 [<s>] sil(sil)"
+	(-siltail)tail sil word = 182671: "</s> @0.000000 [</s>] sil(sil)"
+
+------------------------------------------------------------
+Recognizer(s)
+
+[SR00 "_default"]  AM00 "_default"  +  LM00 "_default"
+
+ Lexicon tree:
+	 total node num = 1536615
+	  root node num =    183
+	(148 hi-freq. words are separated from tree lexicon)
+	  leaf node num = 182672
+	 fact. node num = 182672
+
+ Inter-word N-gram cache: 
+	root node to be cached = 149 / 182 (isolated only)
+	word ends to be cached = 179235 (all)
+	  max. allocation size = 106MB
+	(-lmp)  pass1 LM weight = 5.0  ins. penalty = -1.0
+	(-lmp2) pass2 LM weight = 6.0  ins. penalty = +0.0
+	(-transp)trans. penalty = +0.0 per word
+	(-cmalpha)CM alpha coef = 0.050000
+
+ Search parameters: 
+	    multi-path handling = no
+	(-b) trellis beam width = 400 (-1 or not specified - guessed)
+	(-bs)score pruning thres= disabled
+	(-n)search candidate num= 1
+	(-s)  search stack size = 500
+	(-m)    search overflow = after 2000 hypothesis poped
+	        2nd pass method = searching sentence, generating N-best
+	(-b2)  pass2 beam width = 30
+	(-lookuprange)lookup range= 5  (tm-5 <= t <tm+5)
+	(-sb)2nd scan beamthres = 80.0 (in logscore)
+	(-n)        search till = 1 candidates found
+	(-output)    and output = 1 candidates out of above
+	 factoring score: 1-gram prob. (statically assigned beforehand)
+	short pause segmentation = off
+	fall back on search fail = off, returns search failure
+
+------------------------------------------------------------
+Decoding algorithm:
+
+	1st pass input processing = real time, on-the-fly
+	1st pass method = 1-best approx. generating indexed trellis
+	output word confidence measure based on search-time scores
+
+------------------------------------------------------------
+FrontEnd:
+
+ Input stream:
+	             input type = waveform
+	           input source = microphone
+	    device API          = default
+	          sampling freq. = 16000 Hz
+	         threaded A/D-in = supported, on
+	   zero frames stripping = on
+	         silence cutting = on
+	             level thres = 2000 / 32767
+	         zerocross thres = 60 / sec.
+	             head margin = 300 msec.
+	             tail margin = 400 msec.
+	              chunk size = 1000 samples
+	    long-term DC removal = off
+	    long-term DC removal = off
+	    level scaling factor = 1.00 (disabled)
+	      reject short input = off
+	      reject  long input = off
+
+----------------------- System Information end -----------------------
+
+### read waveform input
+Stat: capture audio at 16000Hz
+Stat: adin_alsa: latency set to 32 msec (chunk = 512 bytes)
+Error: adin_alsa: unable to get pcm info from card control
+Warning: adin_alsa: skip output of detailed audio device info
+STAT: AD-in thread created
+Warning: strip: sample 119-191 has zero value, stripped
+WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
+Warning: input buffer overflow: some input may be dropped, so disgard the input
+
+WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
+Warning: input buffer overflow: some input may be dropped, so disgard the input
+
+WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
+Warning: input buffer overflow: some input may be dropped, so disgard the input
+
+WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
+Warning: input buffer overflow: some input may be dropped, so disgard the input
+
+WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
+Warning: input buffer overflow: some input may be dropped, so disgard the input
+
+WARNING: adin_thread_process: too long input (> 320000 samples), segmented now
+Warning: input buffer overflow: some input may be dropped, so disgard the input
+
