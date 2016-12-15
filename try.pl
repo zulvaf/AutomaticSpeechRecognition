@@ -60,11 +60,12 @@ while ($line = <FILEIN>) {
     print (FILEOUT "\"*\/$line\"\n");
   } elsif ($line =~ /input MFCC file: /) {
     $line =~ s/input MFCC file: //;
-    $line =~ s/\.mfc/\.rec/;
+    $line =~ s/\.mfcc/\.rec/;
     $line =~ s/mfcc\///;
+    $line =~ s/^[^\/]*\///;
     print (FILEOUT "\"*\/$line\"\n");
   } elsif ($line =~ /sentence1: /) {  
-    print (FILEOUT "\"*\/$wavnames[$iWav]\"\n");
+    # print (FILEOUT "\"*\/$wavnames[$iWav]\"\n");
     $line =~ s/sentence1: //;
     $line =~ s/<s> //;
     $line =~ s/ <\/s>//;
@@ -79,3 +80,19 @@ while ($line = <FILEIN>) {
 close(FILEIN);
 close(FILEOUT);
 close(WAVIN);
+
+
+open( FILE, "<$fileout" ); 
+my @LINES = <FILE>; 
+close( FILE ); 
+open( FILE, ">$fileout" );
+for my $i (0 .. $#LINES) {
+  my $temp = $LINES[ $i ];
+  if (substr($LINES[ $i ],0,1) eq '"') {
+    print FILE $LINES[ $i ] unless ( substr($LINES[ $i + 1 ],0,1) eq '"' ); 
+  }
+  else {
+    print FILE $LINES[$i];
+  }
+}
+close( FILE ); 
