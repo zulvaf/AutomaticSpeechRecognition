@@ -1,0 +1,2006 @@
+QS 'R_NonBoundary' { "*+*" }
+QS 'R_Stop' { "*+g","*+kd","*+k","*+dd","*+d","*+td","*+t","*+b","*+pd","*+p" }
+QS 'R_Nasal' { "*+ng","*+en","*+n","*+m" }
+QS 'R_Fricative' { "*+dh","*+th","*+jh","*+ch","*+v","*+f","*+z","*+sh","*+s" }
+QS 'R_Liquid' { "*+hh","*+y","*+w","*+r","*+el","*+l" }
+QS 'R_C-Front' { "*+w","*+v","*+f","*+m","*+b","*+pd","*+p" }
+QS 'R_C-Central' { "*+r","*+el","*+l","*+dh","*+th","*+sh","*+z","*+s","*+n","*+en","*+dd","*+d","*+td","*+t" }
+QS 'R_C-Back' { "*+hh","*+ng","*+g","*+kd","*+k","*+y","*+jh","*+ch","*+sh" }
+QS 'R_Front' { "*+eh","*+ih","*+iy","*+w","*+v","*+f","*+m","*+b","*+pd","*+p" }
+QS 'R_Central' { "*+ao","*+ur","*+ir","*+ar","*+er","*+aa","*+eh","*+r","*+el","*+l","*+dh","*+th","*+sh","*+z","*+s","*+n","*+en","*+dd","*+d","*+td","*+t" }
+QS 'R_Back' { "*+uh","*+ax","*+uw","*+aa","*+hh","*+ng","*+g","*+kd","*+k","*+y","*+jh","*+ch","*+sh" }
+QS 'R_Fortis' { "*+ch","*+sh","*+s","*+th","*+f","*+kd","*+k","*+td","*+t","*+pd","*+p" }
+QS 'R_Lenis' { "*+jh","*+sh","*+z","*+dh","*+v","*+g","*+dd","*+d","*+b" }
+QS 'R_UnFortLenis' { "*+w","*+y","*+r","*+el","*+l","*+hh","*+ng","*+en","*+n","*+m" }
+QS 'R_Coronal' { "*+r","*+el","*+l","*+jh","*+ch","*+sh","*+z","*+s","*+dh","*+th","*+en","*+n","*+dd","*+d","*+td","*+t" }
+QS 'R_NonCoronal' { "*+w","*+y","*+hh","*+v","*+f","*+ng","*+g","*+kd","*+k","*+m","*+b","*+pd","*+p" }
+QS 'R_Anterior' { "*+w","*+el","*+l","*+z","*+s","*+dh","*+th","*+v","*+f","*+en","*+n","*+dd","*+d","*+td","*+t","*+m","*+b","*+pd","*+p" }
+QS 'R_NonAnterior' { "*+y","*+r","*+jh","*+ch","*+hh","*+sh","*+ng","*+g","*+kd","*+k" }
+QS 'R_Continuent' { "*+w","*+y","*+r","*+el","*+l","*+hh","*+sh","*+z","*+s","*+dh","*+th","*+v","*+f","*+ng","*+en","*+n","*+m" }
+QS 'R_NonContinuent' { "*+jh","*+ch","*+g","*+kd","*+k","*+dd","*+d","*+td","*+t","*+b","*+pd","*+p" }
+QS 'R_Strident' { "*+jh","*+ch","*+sh","*+z","*+s" }
+QS 'R_NonStrident' { "*+hh","*+dh","*+th","*+v","*+f" }
+QS 'R_UnStrident' { "*+w","*+y","*+r","*+el","*+l","*+ng","*+g","*+kd","*+k","*+en","*+n","*+dd","*+d","*+td","*+t","*+m","*+b","*+pd","*+p" }
+QS 'R_Glide' { "*+w","*+y","*+r","*+el","*+l","*+hh" }
+QS 'R_Syllabic' { "*+ur","*+ir","*+ar","*+er","*+el","*+l","*+m","*+en" }
+QS 'R_Unvoiced-Cons' { "*+ch","*+hh","*+th","*+f","*+sh","*+s","*+kd","*+k","*+td","*+t","*+pd","*+p" }
+QS 'R_Voiced-Cons' { "*+z","*+w","*+v","*+r","*+ng","*+en","*+n","*+m","*+el","*+l","*+y","*+g","*+dh","*+dd","*+d","*+b","*+jh" }
+QS 'R_Unvoiced-All' { "*+sil","*+ch","*+hh","*+th","*+f","*+sh","*+s","*+kd","*+k","*+td","*+t","*+pd","*+p" }
+QS 'R_Long' { "*+el","*+l","*+m","*+en","*+uw","*+ao","*+ow","*+aa","*+iy" }
+QS 'R_Dipthong' { "*+el","*+l","*+m","*+en","*+ur","*+ir","*+ar","*+er","*+aa","*+oy","*+ay","*+ey" }
+QS 'R_Medium' { "*+el","*+l","*+m","*+en","*+eh","*+ax","*+aa","*+ur","*+ir","*+ar","*+er","*+ey" }
+QS 'R_Rounded' { "*+w","*+oy","*+ax","*+aa","*+uw","*+ao" }
+QS 'R_Unrounded' { "*+y","*+r","*+el","*+l","*+hh","*+m","*+en","*+ax","*+ah","*+aw","*+iy","*+ey","*+ay","*+ur","*+ir","*+ar","*+er","*+aa","*+ih","*+eh" }
+QS 'R_NonAffricate' { "*+dh","*+th","*+v","*+f","*+z","*+sh","*+s" }
+QS 'R_UVowel' { "*+uw","*+el","*+l","*+m","*+en","*+ax","*+aa" }
+QS 'R_Voiced-Stop' { "*+g","*+dd","*+d","*+b" }
+QS 'R_Unvoiced-Stop' { "*+kd","*+k","*+td","*+t","*+pd","*+p" }
+QS 'R_Front-Stop' { "*+b","*+pd","*+p" }
+QS 'R_Central-Stop' { "*+dd","*+d","*+td","*+t" }
+QS 'R_Back-Stop' { "*+g","*+kd","*+k" }
+QS 'R_Voiced-Fric' { "*+v","*+ch","*+dh","*+sh","*+z" }
+QS 'R_Unvoiced-Fric' { "*+ch","*+f","*+th","*+sh","*+s" }
+QS 'R_Front-Fric' { "*+v","*+f" }
+QS 'R_Central-Fric' { "*+dh","*+th","*+z","*+s" }
+QS 'R_b' { "*+b" }
+QS 'R_d' { "*+d" }
+QS 'R_f' { "*+f" }
+QS 'R_g' { "*+g" }
+QS 'R_k' { "*+k" }
+QS 'R_l' { "*+l" }
+QS 'R_m' { "*+m" }
+QS 'R_n' { "*+n" }
+QS 'R_ng' { "*+ng" }
+QS 'R_p' { "*+p" }
+QS 'R_r' { "*+r" }
+QS 'R_s' { "*+s" }
+QS 'R_t' { "*+t" }
+QS 'R_w' { "*+w" }
+QS 'R_y' { "*+y" }
+QS 'R_z' { "*+z" }
+QS 'L_NonBoundary' { "*-*" }
+QS 'L_Stop' { "g-*","kd-*","k-*","dd-*","d-*","td-*","t-*","b-*","pd-*","p-*" }
+QS 'L_Nasal' { "ng-*","en-*","n-*","m-*" }
+QS 'L_Fricative' { "dh-*","th-*","jh-*","ch-*","v-*","f-*","z-*","sh-*","s-*" }
+QS 'L_Liquid' { "hh-*","y-*","w-*","r-*","el-*","l-*" }
+QS 'L_C-Front' { "w-*","v-*","f-*","m-*","b-*","pd-*","p-*" }
+QS 'L_C-Central' { "r-*","el-*","l-*","dh-*","th-*","sh-*","z-*","s-*","n-*","en-*","dd-*","d-*","td-*","t-*" }
+QS 'L_C-Back' { "hh-*","ng-*","g-*","kd-*","k-*","y-*","jh-*","ch-*","sh-*" }
+QS 'L_Front' { "eh-*","ih-*","iy-*","w-*","v-*","f-*","m-*","b-*","pd-*","p-*" }
+QS 'L_Central' { "ao-*","ur-*","ir-*","ar-*","er-*","aa-*","eh-*","r-*","el-*","l-*","dh-*","th-*","sh-*","z-*","s-*","n-*","en-*","dd-*","d-*","td-*","t-*" }
+QS 'L_Back' { "uh-*","ax-*","uw-*","aa-*","hh-*","ng-*","g-*","kd-*","k-*","y-*","jh-*","ch-*","sh-*" }
+QS 'L_Fortis' { "ch-*","sh-*","s-*","th-*","f-*","kd-*","k-*","td-*","t-*","pd-*","p-*" }
+QS 'L_Lenis' { "jh-*","sh-*","z-*","dh-*","v-*","g-*","dd-*","d-*","b-*" }
+QS 'L_UnFortLenis' { "w-*","y-*","r-*","el-*","l-*","hh-*","ng-*","en-*","n-*","m-*" }
+QS 'L_Coronal' { "r-*","el-*","l-*","jh-*","ch-*","sh-*","z-*","s-*","dh-*","th-*","en-*","n-*","dd-*","d-*","td-*","t-*" }
+QS 'L_NonCoronal' { "w-*","y-*","hh-*","v-*","f-*","ng-*","g-*","kd-*","k-*","m-*","b-*","pd-*","p-*" }
+QS 'L_Anterior' { "w-*","el-*","l-*","z-*","s-*","dh-*","th-*","v-*","f-*","en-*","n-*","dd-*","d-*","td-*","t-*","m-*","b-*","pd-*","p-*" }
+QS 'L_NonAnterior' { "y-*","r-*","jh-*","ch-*","hh-*","sh-*","ng-*","g-*","kd-*","k-*" }
+QS 'L_Continuent' { "w-*","y-*","r-*","el-*","l-*","hh-*","sh-*","z-*","s-*","dh-*","th-*","v-*","f-*","ng-*","en-*","n-*","m-*" }
+QS 'L_NonContinuent' { "jh-*","ch-*","g-*","kd-*","k-*","dd-*","d-*","td-*","t-*","b-*","pd-*","p-*" }
+QS 'L_Strident' { "jh-*","ch-*","sh-*","z-*","s-*" }
+QS 'L_NonStrident' { "hh-*","dh-*","th-*","v-*","f-*" }
+QS 'L_UnStrident' { "w-*","y-*","r-*","el-*","l-*","ng-*","g-*","kd-*","k-*","en-*","n-*","dd-*","d-*","td-*","t-*","m-*","b-*","pd-*","p-*" }
+QS 'L_Glide' { "w-*","y-*","r-*","el-*","l-*","hh-*" }
+QS 'L_Syllabic' { "ur-*","ir-*","ar-*","er-*","el-*","l-*","m-*","en-*" }
+QS 'L_Unvoiced-Cons' { "ch-*","hh-*","th-*","f-*","sh-*","s-*","kd-*","k-*","td-*","t-*","pd-*","p-*" }
+QS 'L_Voiced-Cons' { "z-*","w-*","v-*","r-*","ng-*","en-*","n-*","m-*","el-*","l-*","y-*","g-*","dh-*","dd-*","d-*","b-*","jh-*" }
+QS 'L_Unvoiced-All' { "sil-*","ch-*","hh-*","th-*","f-*","sh-*","s-*","kd-*","k-*","td-*","t-*","pd-*","p-*" }
+QS 'L_Long' { "el-*","l-*","m-*","en-*","uw-*","ao-*","ow-*","aa-*","iy-*" }
+QS 'L_Dipthong' { "el-*","l-*","m-*","en-*","ur-*","ir-*","ar-*","er-*","aa-*","oy-*","ay-*","ey-*" }
+QS 'L_Medium' { "el-*","l-*","m-*","en-*","eh-*","ax-*","aa-*","ur-*","ir-*","ar-*","er-*","ey-*" }
+QS 'L_Rounded' { "w-*","oy-*","ax-*","aa-*","uw-*","ao-*" }
+QS 'L_Unrounded' { "y-*","r-*","el-*","l-*","hh-*","m-*","en-*","ax-*","ah-*","aw-*","iy-*","ey-*","ay-*","ur-*","ir-*","ar-*","er-*","aa-*","ih-*","eh-*" }
+QS 'L_NonAffricate' { "dh-*","th-*","v-*","f-*","z-*","sh-*","s-*" }
+QS 'L_UVowel' { "uw-*","el-*","l-*","m-*","en-*","ax-*","aa-*" }
+QS 'L_Voiced-Stop' { "g-*","dd-*","d-*","b-*" }
+QS 'L_Unvoiced-Stop' { "kd-*","k-*","td-*","t-*","pd-*","p-*" }
+QS 'L_Front-Stop' { "b-*","pd-*","p-*" }
+QS 'L_Central-Stop' { "dd-*","d-*","td-*","t-*" }
+QS 'L_Back-Stop' { "g-*","kd-*","k-*" }
+QS 'L_Voiced-Fric' { "v-*","ch-*","dh-*","sh-*","z-*" }
+QS 'L_Unvoiced-Fric' { "ch-*","f-*","th-*","sh-*","s-*" }
+QS 'L_Front-Fric' { "v-*","f-*" }
+QS 'L_Central-Fric' { "dh-*","th-*","z-*","s-*" }
+QS 'L_b' { "b-*" }
+QS 'L_d' { "d-*" }
+QS 'L_f' { "f-*" }
+QS 'L_g' { "g-*" }
+QS 'L_k' { "k-*" }
+QS 'L_l' { "l-*" }
+QS 'L_m' { "m-*" }
+QS 'L_n' { "n-*" }
+QS 'L_ng' { "ng-*" }
+QS 'L_p' { "p-*" }
+QS 'L_r' { "r-*" }
+QS 'L_s' { "s-*" }
+QS 'L_t' { "t-*" }
+QS 'L_w' { "w-*" }
+QS 'L_y' { "y-*" }
+QS 'L_z' { "z-*" }
+
+a[2]
+{
+   0               'L_Fortis'      -1         -3    
+  -1           'L_UnStrident'      -7         -2    
+  -2                'L_Nasal'      -4         -9    
+  -3              'L_C-Front'      -8        -16    
+  -4              'L_C-Front'      -5        -12    
+  -5                 'L_Stop'      -6        -13    
+  -6            'L_C-Central'     -20        -11    
+  -7          'L_NonBoundary'     -38        -15    
+  -8            'L_C-Central'     -23        -10    
+  -9              'L_C-Front'     -14        -24    
+ -10                 'L_Stop'     -36        -54    
+ -11             'L_Anterior'     -35        -18    
+ -12                 'L_Stop'     -32        -45    
+ -13            'L_C-Central'  "ST_a_2_23"     -31    
+ -14            'L_C-Central'     -17        -21    
+ -15          'R_NonBoundary'  "ST_a_2_3"     -19    
+ -16                 'L_Stop'  "ST_a_2_51"     -37    
+ -17                    'R_n'  "ST_a_2_34"  "ST_a_2_35" 
+ -18            'R_C-Central'     -48        -26    
+ -19                 'R_Stop'     -22        -30    
+ -20               'R_C-Back'     -43     "ST_a_2_15" 
+ -21                 'R_Stop'     -44     "ST_a_2_38" 
+ -22           'R_NonCoronal'     -27        -25    
+ -23             'R_Syllabic'     -29     "ST_a_2_45" 
+ -24                    'R_n'     -46     "ST_a_2_41" 
+ -25                    'R_y'     -41     "ST_a_2_8" 
+ -26             'R_Syllabic'     -33     "ST_a_2_22" 
+ -27            'L_Fricative'     -28     "ST_a_2_47" 
+ -28          'R_NonAnterior'     -51     "ST_a_2_6" 
+ -29                'R_Nasal'     -42     "ST_a_2_44" 
+ -30                    'R_p'     -40     "ST_a_2_12" 
+ -31                    'R_k'     -52     "ST_a_2_27" 
+ -32            'R_C-Central'  "ST_a_2_28"  "ST_a_2_29" 
+ -33        'R_Unvoiced-Fric'     -34     "ST_a_2_21" 
+ -34          'R_UnFortLenis'  "ST_a_2_22"  "ST_a_2_20" 
+ -35                   'R_ng'     -39     "ST_a_2_18" 
+ -36                    'R_y'     -50     "ST_a_2_48" 
+ -37                    'R_k'  "ST_a_2_52"  "ST_a_2_53" 
+ -38                    'R_p'  "ST_a_2_1"  "ST_a_2_2" 
+ -39          'R_NonAnterior'     -56     "ST_a_2_17" 
+ -40                    'R_k'     -59     "ST_a_2_11" 
+ -41              'R_C-Front'  "ST_a_2_12"  "ST_a_2_7" 
+ -42            'R_C-Central'  "ST_a_2_42"  "ST_a_2_43" 
+ -43           'R_UnStrident'     -55     "ST_a_2_14" 
+ -44              'R_C-Front'  "ST_a_2_36"  "ST_a_2_37" 
+ -45           'R_NonCoronal'  "ST_a_2_30"     -47    
+ -46           'R_UnStrident'  "ST_a_2_39"     -57    
+ -47                   'R_ng'     -58     "ST_a_2_33" 
+ -48             'R_Syllabic'     -49     "ST_a_2_19" 
+ -49              'R_C-Front'  "ST_a_2_21"  "ST_a_2_20" 
+ -50                'R_Lenis'  "ST_a_2_46"  "ST_a_2_47" 
+ -51               'R_Liquid'  "ST_a_2_4"  "ST_a_2_5" 
+ -52           'R_NonCoronal'     -53     "ST_a_2_26" 
+ -53          'R_UnFortLenis'  "ST_a_2_24"  "ST_a_2_25" 
+ -54               'R_C-Back'  "ST_a_2_49"  "ST_a_2_50" 
+ -55          'R_NonBoundary'  "ST_a_2_14"  "ST_a_2_13" 
+ -56                    'R_d'  "ST_a_2_16"  "ST_a_2_17" 
+ -57                    'R_l'  "ST_a_2_40"  "ST_a_2_41" 
+ -58               'R_Fortis'  "ST_a_2_31"  "ST_a_2_32" 
+ -59               'R_Fortis'  "ST_a_2_9"  "ST_a_2_10" 
+}
+
+au[2]
+{
+   0                    'L_l'      -1         -2    
+  -1                    'L_t'      -3     "ST_au_2_3" 
+  -2                    'R_m'  "ST_au_2_4"  "ST_au_2_5" 
+  -3            'L_Fricative'  "ST_au_2_1"  "ST_au_2_2" 
+}
+
+ai[2]
+{
+   0                    'L_g'      -1         -3    
+  -1                    'L_l'      -4         -2    
+  -2                    'R_n'      -6     "ST_ai_2_5" 
+  -3                    'R_m'  "ST_ai_2_6"  "ST_ai_2_7" 
+  -4           'L_Front-Stop'      -5     "ST_ai_2_2" 
+  -5               'L_Fortis'  "ST_ai_2_3"  "ST_ai_2_1" 
+  -6                    'R_m'  "ST_ai_2_3"  "ST_ai_2_4" 
+}
+
+b[2]
+{
+   0          'L_NonBoundary'  "ST_b_2_1"      -1    
+  -1                'L_Nasal'      -2         -3    
+  -2               'L_Fortis'      -4         -5    
+  -3              'L_C-Front'      -9     "ST_b_2_10" 
+  -4                    'L_r'      -6     "ST_b_2_5" 
+  -5             'L_Strident'  "ST_b_2_6"  "ST_b_2_7" 
+  -6                    'R_d'      -7     "ST_b_2_4" 
+  -7             'L_Syllabic'      -8     "ST_b_2_4" 
+  -8               'R_Fortis'  "ST_b_2_2"  "ST_b_2_3" 
+  -9            'L_C-Central'  "ST_b_2_8"  "ST_b_2_9" 
+}
+
+c[2]
+{
+   0                    'L_n'  "ST_c_2_1"  "ST_c_2_2" 
+}
+
+d[2]
+{
+   0                'L_Nasal'      -1         -7    
+  -1          'L_NonBoundary'  "ST_d_2_1"      -2    
+  -2             'L_Anterior'      -3         -4    
+  -3            'L_C-Central'      -5     "ST_d_2_5" 
+  -4               'L_Fortis'  "ST_d_2_6"      -6    
+  -5               'L_Fortis'      -8     "ST_d_2_4" 
+  -6             'L_Strident'  "ST_d_2_7"  "ST_d_2_8" 
+  -7            'L_C-Central'     -10     "ST_d_2_11" 
+  -8                 'L_Stop'      -9     "ST_d_2_6" 
+  -9             'R_Anterior'  "ST_d_2_2"  "ST_d_2_3" 
+ -10              'L_C-Front'  "ST_d_2_9"  "ST_d_2_10" 
+}
+
+@[2]
+{
+   0                'L_Nasal'      -1         -8    
+  -1           'L_Front-Stop'      -2         -7    
+  -2               'L_Fortis'      -5         -3    
+  -3                 'L_Stop'      -6         -4    
+  -4            'L_C-Central'     -26        -18    
+  -5                 'L_Stop'     -11        -14    
+  -6                'R_Lenis'     -13     "ST_@_2_12" 
+  -7               'L_Fortis'     -19        -10    
+  -8              'L_C-Front'     -17         -9    
+  -9           'R_NonCoronal'     -21     "ST_@_2_27" 
+ -10           'R_NonCoronal'     -25     "ST_@_2_22" 
+ -11               'L_Liquid'     -12        -16    
+ -12                'R_Nasal'     -22     "ST_@_2_24" 
+ -13         'R_Central-Stop'     -15     "ST_@_2_11" 
+ -14            'L_C-Central'  "ST_@_2_5"     -24    
+ -15              'L_C-Front'     -20     "ST_@_2_10" 
+ -16                    'L_r'  "ST_@_2_3"  "ST_@_2_4" 
+ -17                'R_Nasal'  "ST_@_2_23"  "ST_@_2_24" 
+ -18                    'R_r'     -23     "ST_@_2_17" 
+ -19          'R_UnFortLenis'  "ST_@_2_18"  "ST_@_2_19" 
+ -20                    'R_n'     -27     "ST_@_2_11" 
+ -21               'R_Liquid'  "ST_@_2_25"  "ST_@_2_26" 
+ -22               'R_Liquid'  "ST_@_2_1"  "ST_@_2_2" 
+ -23              'R_C-Front'  "ST_@_2_15"  "ST_@_2_16" 
+ -24                   'R_ng'  "ST_@_2_6"  "ST_@_2_7" 
+ -25           'R_UnStrident'  "ST_@_2_20"  "ST_@_2_21" 
+ -26              'R_C-Front'  "ST_@_2_13"  "ST_@_2_14" 
+ -27           'R_NonCoronal'  "ST_@_2_8"  "ST_@_2_9" 
+}
+
+e[2]
+{
+   0          'L_Voiced-Stop'      -1         -2    
+  -1               'L_Fortis'      -3         -4    
+  -2                    'R_r'      -6     "ST_e_2_26" 
+  -3           'L_Continuent'     -19         -5    
+  -4           'L_Front-Stop'      -8        -23    
+  -5                'L_Nasal'      -7        -10    
+  -6              'L_C-Front'     -15        -12    
+  -7             'L_Anterior'     -14        -11    
+  -8               'L_C-Back'      -9     "ST_e_2_17" 
+  -9                 'L_Stop'     -13        -17    
+ -10              'L_C-Front'     -24        -18    
+ -11              'L_C-Front'  "ST_e_2_6"  "ST_e_2_7" 
+ -12           'R_Continuent'     -25        -26    
+ -13             'R_Strident'     -20     "ST_e_2_14" 
+ -14                    'R_r'     -22     "ST_e_2_5" 
+ -15            'L_C-Central'  "ST_e_2_20"     -16    
+ -16             'R_Anterior'  "ST_e_2_20"  "ST_e_2_21" 
+ -17          'R_UnFortLenis'  "ST_e_2_15"  "ST_e_2_16" 
+ -18            'R_Fricative'  "ST_e_2_9"  "ST_e_2_10" 
+ -19          'L_NonBoundary'  "ST_e_2_14"     -21    
+ -20              'L_C-Front'     -27     "ST_e_2_13" 
+ -21                    'R_r'  "ST_e_2_1"  "ST_e_2_5" 
+ -22            'L_C-Central'  "ST_e_2_2"     -28    
+ -23                 'R_Stop'  "ST_e_2_18"  "ST_e_2_19" 
+ -24                    'R_s'  "ST_e_2_10"  "ST_e_2_8" 
+ -25                 'R_Stop'  "ST_e_2_22"  "ST_e_2_23" 
+ -26                    'R_l'  "ST_e_2_24"  "ST_e_2_25" 
+ -27                'R_Nasal'  "ST_e_2_11"  "ST_e_2_12" 
+ -28                    'R_k'  "ST_e_2_3"  "ST_e_2_4" 
+}
+
+f[2]
+{
+   0          'L_UnFortLenis'      -1     "ST_f_2_3" 
+  -1               'L_Fortis'  "ST_f_2_1"  "ST_f_2_2" 
+}
+
+g[2]
+{
+   0                   'L_ng'      -1     "ST_g_2_5" 
+  -1          'L_NonBoundary'  "ST_g_2_1"      -2    
+  -2             'L_Anterior'      -3     "ST_g_2_4" 
+  -3               'L_Liquid'  "ST_g_2_2"  "ST_g_2_3" 
+}
+
+h[2]
+{
+   0          'L_NonBoundary'  "ST_h_2_1"      -1    
+  -1           'L_UnStrident'      -2         -5    
+  -2                 'R_Stop'      -3     "ST_h_2_6" 
+  -3          'R_NonBoundary'  "ST_h_2_2"      -4    
+  -4           'R_Continuent'  "ST_h_2_3"      -7    
+  -5                'L_Nasal'      -6     "ST_h_2_9" 
+  -6                    'L_r'  "ST_h_2_7"  "ST_h_2_8" 
+  -7              'R_Rounded'  "ST_h_2_4"  "ST_h_2_5" 
+}
+
+i[2]
+{
+   0               'L_Fortis'      -1         -3    
+  -1                 'L_Stop'      -2         -6    
+  -2               'L_Liquid'      -4         -9    
+  -3             'L_Strident'      -5        -28    
+  -4                'L_Nasal'     -11        -10    
+  -5               'L_C-Back'      -8        -27    
+  -6               'L_C-Back'      -7     "ST_i_2_19" 
+  -7              'L_C-Front'     -24     "ST_i_2_18" 
+  -8              'L_C-Front'     -17        -12    
+  -9             'L_Anterior'     -18        -13    
+ -10              'L_C-Front'     -15        -32    
+ -11          'L_NonBoundary'  "ST_i_2_1"     -14    
+ -12                 'L_Stop'  "ST_i_2_22"  "ST_i_2_23" 
+ -13              'L_C-Front'     -19     "ST_i_2_15" 
+ -14            'L_Fricative'     -16     "ST_i_2_5" 
+ -15          'R_NonBoundary'  "ST_i_2_6"     -20    
+ -16                    'R_k'     -21     "ST_i_2_4" 
+ -17           'R_NonCoronal'  "ST_i_2_21"     -23    
+ -18            'R_C-Central'     -25        -22    
+ -19                'R_Nasal'  "ST_i_2_13"  "ST_i_2_14" 
+ -20                    'R_n'     -26     "ST_i_2_8" 
+ -21                    'R_n'     -33     "ST_i_2_3" 
+ -22            'R_Fricative'  "ST_i_2_11"  "ST_i_2_12" 
+ -23                'R_Lenis'  "ST_i_2_20"  "ST_i_2_21" 
+ -24            'R_C-Central'     -30     "ST_i_2_17" 
+ -25          'R_NonBoundary'  "ST_i_2_11"  "ST_i_2_12" 
+ -26            'L_C-Central'  "ST_i_2_8"  "ST_i_2_7" 
+ -27                    'R_t'  "ST_i_2_24"  "ST_i_2_25" 
+ -28           'R_NonCoronal'     -29     "ST_i_2_28" 
+ -29            'R_C-Central'     -31     "ST_i_2_28" 
+ -30           'R_NonCoronal'  "ST_i_2_16"  "ST_i_2_17" 
+ -31          'R_NonBoundary'  "ST_i_2_26"  "ST_i_2_27" 
+ -32            'R_Fricative'  "ST_i_2_9"  "ST_i_2_10" 
+ -33                    'R_r'     -34     "ST_i_2_4" 
+ -34                    'R_t'  "ST_i_2_2"  "ST_i_2_3" 
+}
+
+j[2]
+{
+   0                    'L_n'      -1     "ST_j_2_5" 
+  -1          'L_NonBoundary'  "ST_j_2_1"      -2    
+  -2            'L_C-Central'      -4         -3    
+  -3             'L_Anterior'  "ST_j_2_3"  "ST_j_2_4" 
+  -4           'L_NonCoronal'  "ST_j_2_2"  "ST_j_2_4" 
+}
+
+k[2]
+{
+   0          'L_NonBoundary'  "ST_k_2_1"      -1    
+  -1            'L_C-Central'      -2         -3    
+  -2          'R_Voiced-Cons'      -4         -6    
+  -3               'L_Fortis'      -8        -13    
+  -4                    'L_k'      -5     "ST_k_2_7" 
+  -5                'L_Nasal'      -7     "ST_k_2_6" 
+  -6            'R_Unrounded'  "ST_k_2_8"      -9    
+  -7             'R_Strident'     -10     "ST_k_2_5" 
+  -8             'L_Syllabic'     -12     "ST_k_2_12" 
+  -9                'R_Nasal'  "ST_k_2_12"  "ST_k_2_9" 
+ -10          'R_NonBoundary'  "ST_k_2_2"     -11    
+ -11           'R_NonCoronal'  "ST_k_2_3"  "ST_k_2_4" 
+ -12               'L_Liquid'  "ST_k_2_10"     -14    
+ -13                 'L_Stop'  "ST_k_2_13"  "ST_k_2_14" 
+ -14           'R_UnStrident'  "ST_k_2_11"  "ST_k_2_14" 
+}
+
+kh[2]
+   "ST_kh_2_1"
+
+l[2]
+{
+   0               'L_Fortis'      -1         -8    
+  -1          'L_NonBoundary'  "ST_l_2_1"      -2    
+  -2           'L_UnStrident'      -3         -5    
+  -3               'R_Fortis'      -4         -7    
+  -4           'R_UnStrident'      -6         -9    
+  -5              'L_C-Front'  "ST_l_2_7"  "ST_l_2_8" 
+  -6          'R_NonBoundary'  "ST_l_2_2"  "ST_l_2_3" 
+  -7         'R_Central-Stop'  "ST_l_2_5"  "ST_l_2_6" 
+  -8              'L_C-Front'  "ST_l_2_9"  "ST_l_2_10" 
+  -9                    'R_r'  "ST_l_2_4"  "ST_l_2_5" 
+}
+
+m[2]
+{
+   0          'L_NonBoundary'  "ST_m_2_1"      -1    
+  -1               'L_Fortis'      -2         -5    
+  -2                'L_Nasal'      -3         -7    
+  -3           'L_UnStrident'      -4         -8    
+  -4             'R_Anterior'     -12         -6    
+  -5            'L_C-Central'  "ST_m_2_10"     -10    
+  -6                    'R_b'      -9     "ST_m_2_5" 
+  -7            'L_C-Central'     -11     "ST_m_2_9" 
+  -8                 'L_Stop'  "ST_m_2_6"  "ST_m_2_12" 
+  -9           'R_Front-Stop'  "ST_m_2_3"  "ST_m_2_4" 
+ -10                 'L_Stop'  "ST_m_2_11"  "ST_m_2_12" 
+ -11              'L_C-Front'  "ST_m_2_7"  "ST_m_2_8" 
+ -12          'R_NonBoundary'  "ST_m_2_5"  "ST_m_2_2" 
+}
+
+n[2]
+{
+   0               'L_Fortis'      -1     "ST_n_2_10" 
+  -1               'R_Fortis'      -3         -2    
+  -2         'R_Central-Stop'      -7     "ST_n_2_9" 
+  -3          'R_Voiced-Cons'      -4         -6    
+  -4          'R_NonBoundary'  "ST_n_2_1"      -5    
+  -5          'L_Voiced-Cons'  "ST_n_2_2"      -9    
+  -6         'R_Central-Stop'  "ST_n_2_7"  "ST_n_2_5" 
+  -7            'R_C-Central'      -8     "ST_n_2_8" 
+  -8                 'R_Stop'  "ST_n_2_6"  "ST_n_2_7" 
+  -9                'L_Nasal'  "ST_n_2_3"  "ST_n_2_4" 
+}
+
+ng[2]
+{
+   0             'R_Anterior'      -1     "ST_ng_2_4" 
+  -1                'R_Lenis'      -2     "ST_ng_2_3" 
+  -2          'R_NonBoundary'  "ST_ng_2_2"      -3    
+  -3                 'R_Stop'  "ST_ng_2_1"  "ST_ng_2_2" 
+}
+
+ny[2]
+{
+   0           'L_UnStrident'      -1         -3    
+  -1          'L_NonBoundary'  "ST_ny_2_1"      -2    
+  -2            'L_Fricative'  "ST_ny_2_2"  "ST_ny_2_4" 
+  -3                    'L_n'      -4     "ST_ny_2_5" 
+  -4                 'L_Stop'  "ST_ny_2_3"  "ST_ny_2_4" 
+}
+
+o[2]
+{
+   0               'L_Fortis'      -3         -1    
+  -1            'L_C-Central'      -2         -7    
+  -2              'L_C-Front'  "ST_o_2_14"     -11    
+  -3            'L_C-Central'      -4         -5    
+  -4                 'L_Stop'      -9        -10    
+  -5                'L_Nasal'      -6        -14    
+  -6                 'L_Stop'      -8     "ST_o_2_11" 
+  -7                 'L_Stop'  "ST_o_2_17"  "ST_o_2_18" 
+  -8             'L_Syllabic'  "ST_o_2_8"     -13    
+  -9               'R_Liquid'     -12     "ST_o_2_4" 
+ -10              'L_C-Front'     -16     "ST_o_2_7" 
+ -11                 'L_Stop'  "ST_o_2_15"  "ST_o_2_16" 
+ -12                'L_Nasal'     -15     "ST_o_2_3" 
+ -13                'R_Lenis'  "ST_o_2_9"  "ST_o_2_10" 
+ -14               'R_Liquid'  "ST_o_2_12"  "ST_o_2_13" 
+ -15                    'R_n'     -17     "ST_o_2_2" 
+ -16                    'R_t'  "ST_o_2_5"  "ST_o_2_6" 
+ -17               'R_C-Back'  "ST_o_2_1"  "ST_o_2_2" 
+}
+
+oi[2]
+   "ST_oi_2_1"
+
+p[2]
+{
+   0                    'L_m'      -1     "ST_p_2_13" 
+  -1          'L_NonBoundary'  "ST_p_2_1"      -2    
+  -2             'L_Anterior'      -4         -3    
+  -3             'L_Strident'      -6     "ST_p_2_12" 
+  -4           'R_UnStrident'      -5         -9    
+  -5          'L_NonAnterior'      -7        -12    
+  -6                'L_Nasal'      -8     "ST_p_2_11" 
+  -7               'R_Fortis'     -10     "ST_p_2_3" 
+  -8        'L_Unvoiced-Stop'  "ST_p_2_8"     -13    
+  -9                    'R_t'     -11     "ST_p_2_7" 
+ -10          'R_NonBoundary'  "ST_p_2_2"  "ST_p_2_6" 
+ -11                    'R_k'  "ST_p_2_8"  "ST_p_2_6" 
+ -12                'L_Nasal'  "ST_p_2_4"  "ST_p_2_5" 
+ -13               'R_Liquid'  "ST_p_2_9"  "ST_p_2_10" 
+}
+
+q[2]
+   "ST_q_2_1"
+
+r[2]
+{
+   0          'L_NonBoundary'  "ST_r_2_1"      -1    
+  -1             'L_Anterior'      -2         -5    
+  -2                 'R_Stop'      -3         -4    
+  -3               'L_C-Back'      -6     "ST_r_2_7" 
+  -4                    'R_t'     -10     "ST_r_2_11" 
+  -5               'L_Fortis'     -11         -7    
+  -6             'R_Anterior'      -8         -9    
+  -7              'L_C-Front'  "ST_r_2_15"     -13    
+  -8          'R_NonBoundary'  "ST_r_2_2"  "ST_r_2_3" 
+  -9             'R_Strident'     -15     "ST_r_2_6" 
+ -10                    'R_b'     -12     "ST_r_2_10" 
+ -11                 'L_Stop'     -14     "ST_r_2_14" 
+ -12                    'R_g'  "ST_r_2_8"  "ST_r_2_9" 
+ -13                 'L_Stop'  "ST_r_2_16"  "ST_r_2_17" 
+ -14                    'L_n'  "ST_r_2_12"  "ST_r_2_13" 
+ -15              'R_C-Front'  "ST_r_2_4"  "ST_r_2_5" 
+}
+
+s[2]
+{
+   0          'L_NonBoundary'  "ST_s_2_1"      -1    
+  -1           'L_UnStrident'      -3         -2    
+  -2                'L_Nasal'      -5         -4    
+  -3             'R_Anterior'      -6     "ST_s_2_4" 
+  -4            'L_C-Central'      -8     "ST_s_2_12" 
+  -5                 'L_Stop'      -9         -7    
+  -6                    'L_s'     -10     "ST_s_2_8" 
+  -7                    'L_k'     -11     "ST_s_2_9" 
+  -8              'L_C-Front'  "ST_s_2_10"  "ST_s_2_11" 
+  -9                    'L_r'  "ST_s_2_5"  "ST_s_2_6" 
+ -10          'R_NonBoundary'  "ST_s_2_2"     -12    
+ -11                    'L_t'  "ST_s_2_7"  "ST_s_2_8" 
+ -12               'R_Fortis'  "ST_s_2_3"  "ST_s_2_4" 
+}
+
+sy[2]
+   "ST_sy_2_1"
+
+t[2]
+{
+   0          'L_NonBoundary'  "ST_t_2_1"      -1    
+  -1               'L_Fortis'      -2         -3    
+  -2                'L_Nasal'      -4         -7    
+  -3             'L_Strident'      -6        -13    
+  -4                    'R_d'      -5     "ST_t_2_9" 
+  -5          'R_NonBoundary'  "ST_t_2_2"      -8    
+  -6            'L_C-Central'     -10     "ST_t_2_13" 
+  -7              'L_C-Front'  "ST_t_2_10"  "ST_t_2_13" 
+  -8          'L_NonAnterior'      -9     "ST_t_2_8" 
+  -9           'R_NonCoronal'     -12        -11    
+ -10           'L_Front-Stop'  "ST_t_2_11"  "ST_t_2_12" 
+ -11                    'R_p'     -16     "ST_t_2_7" 
+ -12             'R_Anterior'     -14        -15    
+ -13                    'R_r'  "ST_t_2_14"  "ST_t_2_15" 
+ -14            'L_C-Central'  "ST_t_2_3"  "ST_t_2_4" 
+ -15                 'R_Stop'  "ST_t_2_6"  "ST_t_2_7" 
+ -16               'R_Fortis'  "ST_t_2_5"  "ST_t_2_6" 
+}
+
+u[2]
+{
+   0            'L_C-Central'      -2         -1    
+  -1               'L_Fortis'      -5         -4    
+  -2                 'L_Stop'      -6         -3    
+  -3              'L_C-Front'     -10         -8    
+  -4                 'L_Stop'     -17        -13    
+  -5                 'L_Stop'      -9        -27    
+  -6                'L_Nasal'      -7        -21    
+  -7                    'R_n'     -11        -16    
+  -8               'L_Fortis'     -23        -34    
+  -9               'L_Liquid'     -15        -12    
+ -10               'L_Fortis'     -14     "ST_u_2_13" 
+ -11            'R_Back-Stop'     -19        -24    
+ -12             'L_Anterior'     -31        -32    
+ -13                    'R_k'     -26     "ST_u_2_34" 
+ -14                    'R_b'  "ST_u_2_11"  "ST_u_2_12" 
+ -15                'L_Nasal'  "ST_u_2_18"     -20    
+ -16          'L_NonBoundary'  "ST_u_2_6"  "ST_u_2_7" 
+ -17        'R_Unvoiced-Fric'     -18     "ST_u_2_30" 
+ -18           'R_UnStrident'  "ST_u_2_27"     -22    
+ -19          'L_NonBoundary'  "ST_u_2_6"     -28    
+ -20            'R_Unrounded'  "ST_u_2_19"  "ST_u_2_20" 
+ -21              'L_C-Front'  "ST_u_2_8"     -25    
+ -22                    'R_n'     -29     "ST_u_2_33" 
+ -23         'R_Central-Stop'  "ST_u_2_14"  "ST_u_2_15" 
+ -24               'R_Fortis'  "ST_u_2_4"  "ST_u_2_5" 
+ -25                 'R_Stop'  "ST_u_2_9"  "ST_u_2_10" 
+ -26                    'R_p'     -36     "ST_u_2_33" 
+ -27           'R_UnStrident'  "ST_u_2_25"  "ST_u_2_26" 
+ -28            'L_Fricative'     -30     "ST_u_2_16" 
+ -29            'R_C-Central'  "ST_u_2_28"  "ST_u_2_29" 
+ -30                    'R_b'     -37     "ST_u_2_3" 
+ -31        'R_Unvoiced-Fric'     -33     "ST_u_2_22" 
+ -32           'R_UnStrident'  "ST_u_2_23"  "ST_u_2_24" 
+ -33          'R_Voiced-Stop'  "ST_u_2_21"  "ST_u_2_22" 
+ -34               'R_Fortis'     -35     "ST_u_2_17" 
+ -35                'R_Nasal'  "ST_u_2_16"  "ST_u_2_17" 
+ -36           'R_Continuent'  "ST_u_2_31"  "ST_u_2_32" 
+ -37            'R_C-Central'  "ST_u_2_1"     -38    
+ -38               'L_C-Back'     -39     "ST_u_2_2" 
+ -39        'R_Unvoiced-Fric'  "ST_u_2_1"  "ST_u_2_3" 
+}
+
+w[2]
+{
+   0          'L_NonBoundary'  "ST_w_2_1"      -1    
+  -1             'L_Anterior'      -2         -3    
+  -2          'L_NonAnterior'  "ST_w_2_2"      -4    
+  -3             'L_Strident'  "ST_w_2_4"  "ST_w_2_5" 
+  -4               'L_Liquid'  "ST_w_2_5"  "ST_w_2_3" 
+}
+
+y[2]
+{
+   0          'L_NonBoundary'  "ST_y_2_1"      -1    
+  -1           'L_UnStrident'      -2         -3    
+  -2               'L_Fortis'  "ST_y_2_2"  "ST_y_2_5" 
+  -3                'L_Nasal'      -4     "ST_y_2_5" 
+  -4               'L_Fortis'  "ST_y_2_3"  "ST_y_2_4" 
+}
+
+z[2]
+   "ST_z_2_1"
+
+a[3]
+{
+   0              'L_C-Front'      -1         -6    
+  -1                'L_Lenis'      -2        -14    
+  -2            'L_C-Central'      -3         -4    
+  -3               'L_Liquid'      -5        -18    
+  -4             'L_Anterior'     -28         -7    
+  -5                 'L_Stop'      -8        -13    
+  -6                'L_Lenis'     -10        -35    
+  -7               'L_Liquid'      -9        -20    
+  -8          'L_NonBoundary'     -37        -11    
+  -9                'L_Nasal'     -17        -24    
+ -10                'L_Nasal'     -23        -29    
+ -11           'R_NonCoronal'     -12        -26    
+ -12           'R_UnStrident'     -21        -15    
+ -13                    'R_n'     -32     "ST_a_3_33" 
+ -14               'R_Liquid'     -16        -30    
+ -15               'R_Liquid'     -25        -48    
+ -16           'R_NonCoronal'     -31        -49    
+ -17              'R_C-Front'     -19        -86    
+ -18                   'R_ng'     -77     "ST_a_3_38" 
+ -19            'R_C-Central'     -33        -22    
+ -20              'R_C-Front'     -42       -123    
+ -21          'R_NonBoundary'  "ST_a_3_4"     -65    
+ -22               'R_Liquid'     -52        -51    
+ -23               'R_Fortis'     -36        -43    
+ -24             'R_Syllabic'     -56        -50    
+ -25                'L_Nasal'     -46        -73    
+ -26                    'R_y'     -27     "ST_a_3_22" 
+ -27            'R_Back-Stop'     -70       -101    
+ -28        'R_Unvoiced-Stop'     -54        -57    
+ -29            'R_C-Central'     -58        -40    
+ -30             'R_Anterior'     -90        -88    
+ -31                'R_Nasal'     -74     "ST_a_3_94" 
+ -32             'R_Syllabic'     -34        -92    
+ -33               'R_Liquid'     -44       -112    
+ -34              'R_C-Front'     -41       -143    
+ -35                    'R_g'     -38     "ST_a_3_138" 
+ -36            'R_C-Central'     -59        -45    
+ -37                    'R_p'    -139     "ST_a_3_3" 
+ -38               'R_Liquid'     -39        -64    
+ -39           'R_NonCoronal'     -61       -107    
+ -40               'R_Liquid'     -55        -98    
+ -41            'R_C-Central'    -117        -62    
+ -42             'R_Syllabic'     -53     "ST_a_3_85" 
+ -43            'R_C-Central'    -116        -66    
+ -44          'R_NonBoundary'  "ST_a_3_50"     -47    
+ -45               'R_Liquid'    -137        -84    
+ -46               'R_Fortis'     -71     "ST_a_3_9" 
+ -47               'R_C-Back'    -124        -97    
+ -48             'R_Anterior'  "ST_a_3_12"  "ST_a_3_13" 
+ -49         'L_Central-Stop'    -130        -68    
+ -50                'R_Nasal'  "ST_a_3_76"  "ST_a_3_77" 
+ -51             'R_Anterior'    -132     "ST_a_3_62" 
+ -52               'R_Fortis'    -110        -80    
+ -53          'R_Voiced-Cons'     -63        -69    
+ -54           'R_UnStrident'    -102        -72    
+ -55               'R_Fortis'    -136        -91    
+ -56          'R_UnFortLenis'     -67       -106    
+ -57              'R_C-Front'     -75     "ST_a_3_49" 
+ -58                    'R_k'     -82     "ST_a_3_122" 
+ -59          'R_NonBoundary'  "ST_a_3_118"     -60    
+ -60              'R_C-Front'    -109       -147    
+ -61           'R_UnStrident'  "ST_a_3_129"    -111    
+ -62               'R_Fortis'     -87       -100    
+ -63                 'R_Stop'    -138     "ST_a_3_80" 
+ -64              'R_C-Front'     -93     "ST_a_3_137" 
+ -65               'R_Fortis'  "ST_a_3_5"  "ST_a_3_6" 
+ -66                 'R_Stop'  "ST_a_3_116"  "ST_a_3_117" 
+ -67                 'R_Stop'    -113       -114    
+ -68            'R_Back-Stop'     -79     "ST_a_3_98" 
+ -69                    'R_r'     -76     "ST_a_3_84" 
+ -70                'L_Nasal'     -81     "ST_a_3_19" 
+ -71                 'R_Stop'  "ST_a_3_7"  "ST_a_3_8" 
+ -72             'R_Syllabic'     -78     "ST_a_3_46" 
+ -73               'R_Fortis'    -134     "ST_a_3_11" 
+ -74         'L_Central-Stop'    -144       -108    
+ -75            'R_C-Central'  "ST_a_3_47"  "ST_a_3_48" 
+ -76                'R_Nasal'    -133       -126    
+ -77              'R_C-Front'     -95     "ST_a_3_37" 
+ -78                   'R_ng'     -83     "ST_a_3_45" 
+ -79                 'R_Stop'  "ST_a_3_96"  "ST_a_3_97" 
+ -80                 'R_Stop'  "ST_a_3_58"  "ST_a_3_59" 
+ -81          'R_UnFortLenis'    -141        -85    
+ -82              'R_C-Front'     -96     "ST_a_3_121" 
+ -83              'R_C-Front'     -89       -148    
+ -84             'R_Anterior'    -129     "ST_a_3_114" 
+ -85                'R_Nasal'  "ST_a_3_16"     -99    
+ -86                 'L_Stop'  "ST_a_3_63"    -104    
+ -87                 'R_Stop'  "ST_a_3_25"  "ST_a_3_26" 
+ -88         'L_Central-Stop'    -127     "ST_a_3_104" 
+ -89            'R_C-Central'  "ST_a_3_42"     -94    
+ -90            'R_C-Central'  "ST_a_3_99"    -120    
+ -91                 'R_Stop'  "ST_a_3_125"  "ST_a_3_126" 
+ -92                'R_Nasal'  "ST_a_3_31"  "ST_a_3_32" 
+ -93            'R_C-Central'  "ST_a_3_134"    -142    
+ -94                'R_Nasal'  "ST_a_3_43"  "ST_a_3_44" 
+ -95           'R_UnStrident'  "ST_a_3_34"    -115    
+ -96          'R_NonBoundary'  "ST_a_3_118"    -118    
+ -97                 'R_Stop'  "ST_a_3_53"  "ST_a_3_54" 
+ -98             'R_Anterior'  "ST_a_3_127"  "ST_a_3_128" 
+ -99              'R_C-Front'  "ST_a_3_17"  "ST_a_3_18" 
+ -100                 'R_Stop'  "ST_a_3_27"  "ST_a_3_28" 
+ -101                'L_Nasal'    -103     "ST_a_3_24" 
+ -102          'R_NonBoundary'  "ST_a_3_39"    -105    
+ -103               'R_Fortis'  "ST_a_3_20"  "ST_a_3_21" 
+ -104               'R_Fortis'  "ST_a_3_64"    -145    
+ -105                    'R_s'  "ST_a_3_40"  "ST_a_3_41" 
+ -106                    'R_n'    -121     "ST_a_3_75" 
+ -107           'R_Front-Stop'  "ST_a_3_132"  "ST_a_3_133" 
+ -108                 'R_Stop'    -122     "ST_a_3_93" 
+ -109               'R_Liquid'    -119     "ST_a_3_106" 
+ -110                 'R_Stop'  "ST_a_3_56"    -125    
+ -111               'R_Fortis'  "ST_a_3_130"  "ST_a_3_131" 
+ -112                 'L_Stop'  "ST_a_3_55"  "ST_a_3_84" 
+ -113          'R_NonBoundary'  "ST_a_3_67"    -131    
+ -114               'R_C-Back'    -135     "ST_a_3_72" 
+ -115               'R_Fortis'  "ST_a_3_35"  "ST_a_3_36" 
+ -116              'R_C-Front'  "ST_a_3_115"  "ST_a_3_121" 
+ -117          'R_NonBoundary'  "ST_a_3_50"    -128    
+ -118                'R_Nasal'  "ST_a_3_119"  "ST_a_3_120" 
+ -119                 'R_Stop'  "ST_a_3_105"  "ST_a_3_106" 
+ -120         'L_Central-Stop'  "ST_a_3_100"  "ST_a_3_101" 
+ -121            'R_Unrounded'  "ST_a_3_73"  "ST_a_3_74" 
+ -122          'R_NonBoundary'  "ST_a_3_90"    -149    
+ -123                'R_Nasal'  "ST_a_3_86"  "ST_a_3_87" 
+ -124                 'L_Stop'  "ST_a_3_51"  "ST_a_3_52" 
+ -125                 'L_Stop'  "ST_a_3_57"  "ST_a_3_60" 
+ -126            'R_C-Central'  "ST_a_3_82"  "ST_a_3_83" 
+ -127              'R_C-Front'  "ST_a_3_102"  "ST_a_3_103" 
+ -128                 'R_Stop'  "ST_a_3_23"  "ST_a_3_24" 
+ -129               'L_Liquid'    -140     "ST_a_3_113" 
+ -130             'R_Syllabic'  "ST_a_3_95"  "ST_a_3_103" 
+ -131            'R_Fricative'  "ST_a_3_68"  "ST_a_3_69" 
+ -132                 'L_Stop'  "ST_a_3_60"  "ST_a_3_61" 
+ -133               'R_Liquid'  "ST_a_3_81"  "ST_a_3_134" 
+ -134                 'R_Stop'  "ST_a_3_10"  "ST_a_3_71" 
+ -135                    'R_d'  "ST_a_3_70"  "ST_a_3_71" 
+ -136                'R_Nasal'  "ST_a_3_123"  "ST_a_3_124" 
+ -137                 'R_Stop'  "ST_a_3_109"  "ST_a_3_110" 
+ -138            'R_Fricative'    -146     "ST_a_3_79" 
+ -139            'R_C-Central'  "ST_a_3_1"  "ST_a_3_2" 
+ -140                 'L_Stop'  "ST_a_3_111"  "ST_a_3_112" 
+ -141        'R_Unvoiced-Stop'  "ST_a_3_14"  "ST_a_3_15" 
+ -142             'R_Anterior'  "ST_a_3_135"  "ST_a_3_136" 
+ -143        'R_Unvoiced-Stop'  "ST_a_3_29"  "ST_a_3_30" 
+ -144               'R_Fortis'  "ST_a_3_88"  "ST_a_3_89" 
+ -145                 'R_Stop'  "ST_a_3_65"  "ST_a_3_66" 
+ -146          'R_NonBoundary'  "ST_a_3_107"  "ST_a_3_78" 
+ -147                 'R_Stop'  "ST_a_3_107"  "ST_a_3_108" 
+ -148                 'R_Stop'  "ST_a_3_46"  "ST_a_3_49" 
+ -149               'R_Fortis'  "ST_a_3_91"  "ST_a_3_92" 
+}
+
+au[3]
+{
+   0                    'R_d'  "ST_au_3_1"  "ST_au_3_2" 
+}
+
+ai[3]
+{
+   0                    'L_g'  "ST_ai_3_1"      -1    
+  -1                    'R_m'  "ST_ai_3_2"  "ST_ai_3_3" 
+}
+
+b[3]
+{
+   0                'L_Nasal'      -1         -3    
+  -1             'R_Anterior'      -2         -5    
+  -2          'L_NonBoundary'  "ST_b_3_1"      -4    
+  -3              'L_C-Front'  "ST_b_3_6"  "ST_b_3_7" 
+  -4               'L_Fortis'      -6     "ST_b_3_4" 
+  -5                    'R_l'  "ST_b_3_5"  "ST_b_3_6" 
+  -6            'L_C-Central'  "ST_b_3_2"  "ST_b_3_3" 
+}
+
+c[3]
+   "ST_c_3_1"
+
+d[3]
+{
+   0                'L_Nasal'      -1         -5    
+  -1          'L_NonBoundary'  "ST_d_3_4"      -2    
+  -2               'L_Fortis'      -3         -6    
+  -3             'R_Anterior'      -4     "ST_d_3_2" 
+  -4            'L_Unrounded'  "ST_d_3_1"  "ST_d_3_3" 
+  -5            'L_C-Central'  "ST_d_3_5"  "ST_d_3_6" 
+  -6             'L_Strident'  "ST_d_3_3"  "ST_d_3_4" 
+}
+
+@[3]
+{
+   0                'L_Nasal'      -1         -4    
+  -1              'L_C-Front'      -2         -6    
+  -2               'L_Fortis'     -11         -3    
+  -3              'R_C-Front'      -7         -8    
+  -4           'R_NonCoronal'     -10         -5    
+  -5              'L_C-Front'     -27        -24    
+  -6           'R_NonCoronal'     -12        -33    
+  -7         'L_Central-Stop'      -9        -23    
+  -8            'L_C-Central'  "ST_@_3_15"     -17    
+  -9                 'L_Stop'     -15        -26    
+ -10               'R_Liquid'     -22        -16    
+ -11                 'L_Stop'     -13        -20    
+ -12               'L_Fortis'     -25        -14    
+ -13            'L_C-Central'     -18        -19    
+ -14               'R_Liquid'  "ST_@_3_22"  "ST_@_3_23" 
+ -15               'R_Liquid'     -30     "ST_@_3_11" 
+ -16              'L_C-Front'  "ST_@_3_29"  "ST_@_3_30" 
+ -17                 'R_Stop'     -32        -21    
+ -18                    'R_l'     -34     "ST_@_3_2" 
+ -19              'R_C-Front'     -29     "ST_@_3_5" 
+ -20                   'R_ng'     -28     "ST_@_3_8" 
+ -21               'R_Fortis'  "ST_@_3_18"  "ST_@_3_19" 
+ -22                'R_Nasal'     -31     "ST_@_3_28" 
+ -23                    'R_r'  "ST_@_3_17"  "ST_@_3_14" 
+ -24              'R_C-Front'  "ST_@_3_33"  "ST_@_3_34" 
+ -25          'R_UnFortLenis'  "ST_@_3_20"  "ST_@_3_21" 
+ -26          'R_Voiced-Cons'  "ST_@_3_12"  "ST_@_3_13" 
+ -27                    'R_g'  "ST_@_3_31"  "ST_@_3_32" 
+ -28               'R_Liquid'  "ST_@_3_6"  "ST_@_3_7" 
+ -29             'L_Syllabic'  "ST_@_3_3"  "ST_@_3_4" 
+ -30        'R_Unvoiced-Stop'  "ST_@_3_9"  "ST_@_3_10" 
+ -31               'R_Fortis'  "ST_@_3_26"  "ST_@_3_27" 
+ -32                 'L_Stop'  "ST_@_3_16"  "ST_@_3_17" 
+ -33             'R_Syllabic'  "ST_@_3_24"  "ST_@_3_25" 
+ -34              'R_C-Front'  "ST_@_3_1"  "ST_@_3_31" 
+}
+
+e[3]
+{
+   0                    'L_b'      -1         -3    
+  -1           'R_Continuent'      -2         -4    
+  -2                 'L_Stop'      -9         -6    
+  -3          'R_UnFortLenis'     -22        -21    
+  -4          'L_Voiced-Stop'      -5        -25    
+  -5                    'R_r'      -7        -13    
+  -6              'L_C-Front'     -10         -8    
+  -7             'R_Strident'     -12        -17    
+  -8                 'R_Stop'  "ST_e_3_12"     -11    
+  -9               'R_Fortis'     -18        -16    
+ -10               'L_Fortis'     -14        -32    
+ -11                    'R_t'     -34     "ST_e_3_16" 
+ -12                    'L_m'     -15        -20    
+ -13             'L_Anterior'     -41        -45    
+ -14                    'R_p'     -19     "ST_e_3_10" 
+ -15            'L_C-Central'     -27        -24    
+ -16               'R_C-Back'     -42        -28    
+ -17                    'L_n'     -26     "ST_e_3_27" 
+ -18                'L_Nasal'     -29        -47    
+ -19               'R_Fortis'  "ST_e_3_8"  "ST_e_3_9" 
+ -20            'R_Fricative'     -43     "ST_e_3_23" 
+ -21                    'R_r'  "ST_e_3_41"  "ST_e_3_42" 
+ -22                 'R_Stop'     -23        -40    
+ -23            'R_Fricative'  "ST_e_3_37"  "ST_e_3_38" 
+ -24          'L_UnFortLenis'     -31        -36    
+ -25              'R_C-Front'     -52        -33    
+ -26               'L_Liquid'     -39     "ST_e_3_26" 
+ -27              'L_C-Front'     -38        -53    
+ -28                    'L_r'     -51     "ST_e_3_7" 
+ -29             'L_Syllabic'     -30     "ST_e_3_3" 
+ -30          'R_NonBoundary'  "ST_e_3_1"  "ST_e_3_2" 
+ -31                    'R_l'  "ST_e_3_18"  "ST_e_3_31" 
+ -32            'L_C-Central'     -49        -44    
+ -33                'R_Nasal'     -35     "ST_e_3_36" 
+ -34               'R_C-Back'     -50     "ST_e_3_15" 
+ -35            'R_Fricative'  "ST_e_3_34"  "ST_e_3_35" 
+ -36             'L_Anterior'     -37     "ST_e_3_20" 
+ -37                    'R_n'  "ST_e_3_26"  "ST_e_3_19" 
+ -38                    'R_m'  "ST_e_3_24"  "ST_e_3_23" 
+ -39               'L_Fortis'  "ST_e_3_24"  "ST_e_3_25" 
+ -40               'R_C-Back'  "ST_e_3_39"  "ST_e_3_40" 
+ -41          'L_NonAnterior'  "ST_e_3_28"  "ST_e_3_29" 
+ -42              'L_Rounded'     -48     "ST_e_3_39" 
+ -43            'R_C-Central'  "ST_e_3_21"  "ST_e_3_22" 
+ -44                 'R_Stop'  "ST_e_3_17"     -46    
+ -45         'L_Central-Stop'  "ST_e_3_30"  "ST_e_3_31" 
+ -46              'R_C-Front'  "ST_e_3_40"  "ST_e_3_36" 
+ -47               'R_C-Back'  "ST_e_3_4"  "ST_e_3_5" 
+ -48                'L_Nasal'  "ST_e_3_11"  "ST_e_3_16" 
+ -49               'R_Fortis'  "ST_e_3_32"  "ST_e_3_11" 
+ -50               'R_Fortis'  "ST_e_3_13"  "ST_e_3_14" 
+ -51             'L_Anterior'  "ST_e_3_9"  "ST_e_3_6" 
+ -52                    'R_n'  "ST_e_3_32"  "ST_e_3_33" 
+ -53               'R_Liquid'  "ST_e_3_21"  "ST_e_3_17" 
+}
+
+f[3]
+{
+   0          'L_NonBoundary'  "ST_f_3_1"      -1    
+  -1                'L_Nasal'      -2     "ST_f_3_4" 
+  -2          'R_NonBoundary'  "ST_f_3_2"  "ST_f_3_3" 
+}
+
+g[3]
+{
+   0                   'L_ng'      -1     "ST_g_3_3" 
+  -1           'R_UnStrident'  "ST_g_3_1"  "ST_g_3_2" 
+}
+
+h[3]
+{
+   0          'L_NonBoundary'  "ST_h_3_1"      -1    
+  -1                 'R_Stop'      -2         -6    
+  -2          'R_NonBoundary'  "ST_h_3_2"      -3    
+  -3              'R_C-Front'      -4     "ST_h_3_8" 
+  -4           'L_UnStrident'      -5         -8    
+  -5               'R_Fortis'      -7     "ST_h_3_3" 
+  -6               'R_Fortis'     -14        -12    
+  -7               'L_Fortis'     -10     "ST_h_3_5" 
+  -8                    'L_l'      -9     "ST_h_3_7" 
+  -9                'L_Nasal'     -13     "ST_h_3_6" 
+ -10            'R_C-Central'     -11     "ST_h_3_8" 
+ -11               'R_Liquid'  "ST_h_3_7"  "ST_h_3_11" 
+ -12               'R_C-Back'  "ST_h_3_11"  "ST_h_3_12" 
+ -13                 'L_Stop'  "ST_h_3_4"  "ST_h_3_5" 
+ -14              'R_C-Front'  "ST_h_3_9"  "ST_h_3_10" 
+}
+
+i[3]
+{
+   0                'L_Nasal'      -1        -10    
+  -1          'R_NonBoundary'     -30         -2    
+  -2                 'R_Stop'      -3         -4    
+  -3             'R_Anterior'      -6         -5    
+  -4               'R_C-Back'     -12        -25    
+  -5             'R_Strident'      -9        -19    
+  -6            'R_C-Central'      -7        -28    
+  -7                'R_Nasal'      -8        -57    
+  -8               'R_Liquid'     -11     "ST_i_3_14" 
+  -9                    'R_l'     -14        -38    
+ -10          'R_NonBoundary'  "ST_i_3_62"     -16    
+ -11             'L_Strident'     -13     "ST_i_3_13" 
+ -12                    'R_t'     -15        -21    
+ -13            'L_Unrounded'     -17        -59    
+ -14               'L_Liquid'     -18        -39    
+ -15         'L_Central-Stop'     -22        -43    
+ -16              'L_C-Front'     -31        -27    
+ -17          'L_NonBoundary'  "ST_i_3_4"     -20    
+ -18             'L_Anterior'     -24        -26    
+ -19               'L_Liquid'     -23        -68    
+ -20                'L_Lenis'     -46        -32    
+ -21                    'L_k'     -34     "ST_i_3_53" 
+ -22               'L_Liquid'     -37        -82    
+ -23                    'L_b'     -42     "ST_i_3_38" 
+ -24               'L_Fortis'     -48     "ST_i_3_22" 
+ -25               'L_Liquid'     -29        -55    
+ -26                    'L_p'     -33        -81    
+ -27          'R_UnFortLenis'     -49        -62    
+ -28                 'L_Stop'     -56        -50    
+ -29             'L_Anterior'     -40        -44    
+ -30                'L_Lenis'     -70     "ST_i_3_3" 
+ -31                    'R_n'     -35        -87    
+ -32              'L_C-Front'     -75     "ST_i_3_10" 
+ -33          'L_Voiced-Stop'     -66        -54    
+ -34             'L_Anterior'     -77        -63    
+ -35               'R_Fortis'     -36        -51    
+ -36                    'R_l'     -52     "ST_i_3_74" 
+ -37                    'L_s'     -61        -74    
+ -38              'L_C-Front'     -41     "ST_i_3_34" 
+ -39             'R_Syllabic'  "ST_i_3_33"     -58    
+ -40                 'L_Stop'  "ST_i_3_54"  "ST_i_3_55" 
+ -41               'L_Liquid'     -65     "ST_i_3_33" 
+ -42             'L_Anterior'  "ST_i_3_35"     -71    
+ -43              'R_C-Front'     -47        -60    
+ -44               'R_Fortis'  "ST_i_3_56"     -45    
+ -45             'L_Strident'     -53     "ST_i_3_59" 
+ -46                 'L_Stop'     -72     "ST_i_3_7" 
+ -47               'L_Fortis'  "ST_i_3_45"  "ST_i_3_46" 
+ -48          'L_NonBoundary'  "ST_i_3_68"     -76    
+ -49        'R_Unvoiced-Fric'     -64     "ST_i_3_71" 
+ -50                    'L_k'  "ST_i_3_19"  "ST_i_3_32" 
+ -51         'R_Central-Stop'     -67     "ST_i_3_66" 
+ -52                   'R_ng'     -84     "ST_i_3_72" 
+ -53                    'L_t'     -78     "ST_i_3_58" 
+ -54              'R_C-Front'  "ST_i_3_25"  "ST_i_3_26" 
+ -55             'L_Syllabic'  "ST_i_3_60"  "ST_i_3_61" 
+ -56            'L_Fricative'     -69     "ST_i_3_30" 
+ -57            'L_C-Central'  "ST_i_3_15"  "ST_i_3_16" 
+ -58             'L_Syllabic'  "ST_i_3_44"  "ST_i_3_29" 
+ -59                    'L_r'  "ST_i_3_11"  "ST_i_3_12" 
+ -60               'L_Fortis'  "ST_i_3_47"  "ST_i_3_48" 
+ -61               'L_C-Back'     -85        -88    
+ -62            'R_C-Central'     -80        -86    
+ -63                    'L_s'  "ST_i_3_51"  "ST_i_3_52" 
+ -64                    'R_k'     -73     "ST_i_3_70" 
+ -65               'L_Fortis'     -79     "ST_i_3_32" 
+ -66             'R_Syllabic'     -83     "ST_i_3_48" 
+ -67            'R_C-Central'  "ST_i_3_64"  "ST_i_3_65" 
+ -68             'L_Anterior'  "ST_i_3_39"  "ST_i_3_40" 
+ -69               'L_Liquid'  "ST_i_3_17"  "ST_i_3_18" 
+ -70               'L_Fortis'  "ST_i_3_1"  "ST_i_3_2" 
+ -71          'L_Voiced-Stop'  "ST_i_3_36"  "ST_i_3_37" 
+ -72            'L_Fricative'  "ST_i_3_5"  "ST_i_3_6" 
+ -73                 'R_Stop'  "ST_i_3_69"  "ST_i_3_73" 
+ -74              'R_C-Front'  "ST_i_3_52"  "ST_i_3_42" 
+ -75            'L_C-Central'  "ST_i_3_8"  "ST_i_3_9" 
+ -76             'R_Syllabic'  "ST_i_3_20"  "ST_i_3_21" 
+ -77            'L_C-Central'     -89     "ST_i_3_51" 
+ -78              'L_C-Front'  "ST_i_3_57"  "ST_i_3_70" 
+ -79            'L_C-Central'  "ST_i_3_30"  "ST_i_3_31" 
+ -80            'R_Unrounded'  "ST_i_3_72"  "ST_i_3_73" 
+ -81              'R_C-Front'  "ST_i_3_27"  "ST_i_3_28" 
+ -82              'R_C-Front'  "ST_i_3_43"  "ST_i_3_44" 
+ -83            'R_Fricative'  "ST_i_3_23"  "ST_i_3_24" 
+ -84             'R_Anterior'  "ST_i_3_69"  "ST_i_3_63" 
+ -85              'R_C-Front'  "ST_i_3_41"  "ST_i_3_43" 
+ -86                'R_Nasal'  "ST_i_3_74"  "ST_i_3_75" 
+ -87            'L_C-Central'  "ST_i_3_67"  "ST_i_3_68" 
+ -88                    'R_b'  "ST_i_3_55"  "ST_i_3_50" 
+ -89                 'L_Stop'  "ST_i_3_49"  "ST_i_3_50" 
+}
+
+j[3]
+{
+   0                'L_Nasal'      -1     "ST_j_3_3" 
+  -1          'L_NonBoundary'  "ST_j_3_1"  "ST_j_3_2" 
+}
+
+k[3]
+{
+   0          'L_NonBoundary'  "ST_k_3_1"      -1    
+  -1             'R_Anterior'      -2         -4    
+  -2                   'L_ng'      -3     "ST_k_3_8" 
+  -3               'L_Fortis'      -5         -9    
+  -4        'R_Unvoiced-Fric'      -6     "ST_k_3_12" 
+  -5             'L_Anterior'      -7        -11    
+  -6               'R_Fortis'      -8     "ST_k_3_11" 
+  -7          'R_NonBoundary'  "ST_k_3_2"     -10    
+  -8               'R_Liquid'  "ST_k_3_9"  "ST_k_3_10" 
+  -9            'L_C-Central'  "ST_k_3_6"  "ST_k_3_7" 
+ -10               'L_Liquid'     -12     "ST_k_3_3" 
+ -11                    'L_l'  "ST_k_3_4"  "ST_k_3_5" 
+ -12               'R_C-Back'  "ST_k_3_10"  "ST_k_3_11" 
+}
+
+kh[3]
+   "ST_kh_3_1"
+
+l[3]
+{
+   0           'R_UnStrident'      -1         -7    
+  -1          'R_NonBoundary'  "ST_l_3_1"      -2    
+  -2               'L_Fortis'      -3        -10    
+  -3          'L_NonBoundary'  "ST_l_3_2"      -4    
+  -4            'R_Fricative'      -5     "ST_l_3_5" 
+  -5           'L_UnStrident'  "ST_l_3_3"      -6    
+  -6              'L_C-Front'  "ST_l_3_4"  "ST_l_3_7" 
+  -7                    'R_l'      -8     "ST_l_3_11" 
+  -8         'R_Central-Stop'      -9     "ST_l_3_10" 
+  -9                 'R_Stop'  "ST_l_3_8"  "ST_l_3_9" 
+ -10              'L_C-Front'  "ST_l_3_6"  "ST_l_3_7" 
+}
+
+m[3]
+{
+   0             'R_Anterior'      -2         -1    
+  -1                    'R_b'      -5     "ST_m_3_16" 
+  -2          'L_NonBoundary'  "ST_m_3_1"      -3    
+  -3          'R_NonBoundary'  "ST_m_3_2"      -4    
+  -4               'L_Fortis'      -6         -9    
+  -5           'R_Front-Stop'     -10     "ST_m_3_15" 
+  -6                    'L_n'      -7     "ST_m_3_8" 
+  -7               'R_C-Back'      -8        -15    
+  -8                    'L_r'     -11     "ST_m_3_6" 
+  -9             'L_Strident'  "ST_m_3_9"  "ST_m_3_10" 
+ -10          'R_UnFortLenis'     -12        -13    
+ -11                   'L_ng'     -14     "ST_m_3_5" 
+ -12          'R_Voiced-Stop'  "ST_m_3_11"  "ST_m_3_12" 
+ -13                    'R_l'  "ST_m_3_13"  "ST_m_3_14" 
+ -14           'L_UnStrident'  "ST_m_3_3"  "ST_m_3_4" 
+ -15               'R_Fortis'  "ST_m_3_14"  "ST_m_3_7" 
+}
+
+n[3]
+{
+   0          'R_Voiced-Stop'      -1         -5    
+  -1          'R_NonBoundary'  "ST_n_3_1"      -2    
+  -2               'R_Fortis'      -3         -4    
+  -3          'R_UnFortLenis'      -8         -9    
+  -4         'R_Central-Stop'      -6     "ST_n_3_14" 
+  -5            'R_C-Central'  "ST_n_3_15"  "ST_n_3_16" 
+  -6            'R_C-Central'      -7     "ST_n_3_13" 
+  -7           'R_Front-Stop'     -12     "ST_n_3_12" 
+  -8               'L_Fortis'     -10     "ST_n_3_5" 
+  -9                    'R_m'     -11     "ST_n_3_9" 
+ -10           'L_UnStrident'  "ST_n_3_2"     -13    
+ -11               'R_C-Back'     -14     "ST_n_3_8" 
+ -12                 'R_Stop'  "ST_n_3_10"  "ST_n_3_11" 
+ -13                    'L_n'  "ST_n_3_3"  "ST_n_3_4" 
+ -14             'R_Anterior'  "ST_n_3_6"  "ST_n_3_7" 
+}
+
+ng[3]
+{
+   0           'R_UnStrident'      -1         -2    
+  -1          'R_NonBoundary'  "ST_ng_3_1"      -3    
+  -2               'R_Fortis'      -4         -6    
+  -3               'R_Fortis'  "ST_ng_3_2"  "ST_ng_3_3" 
+  -4            'R_Back-Stop'      -5     "ST_ng_3_8" 
+  -5                 'R_Stop'      -7         -8    
+  -6               'R_C-Back'  "ST_ng_3_9"  "ST_ng_3_10" 
+  -7                'R_Nasal'  "ST_ng_3_4"  "ST_ng_3_5" 
+  -8              'R_C-Front'  "ST_ng_3_6"  "ST_ng_3_7" 
+}
+
+ny[3]
+{
+   0           'L_UnStrident'  "ST_ny_3_1"  "ST_ny_3_2" 
+}
+
+o[3]
+{
+   0           'L_NonCoronal'      -1         -2    
+  -1          'L_UnFortLenis'      -3         -4    
+  -2            'R_C-Central'     -12         -6    
+  -3               'L_Fortis'      -5        -13    
+  -4                'L_Nasal'      -7        -10    
+  -5            'L_C-Central'     -11        -18    
+  -6               'L_Fortis'      -8         -9    
+  -7             'L_Anterior'     -23        -22    
+  -8                 'L_Stop'     -17        -19    
+  -9              'L_C-Front'  "ST_o_3_26"     -20    
+ -10               'R_Liquid'     -33        -25    
+ -11            'R_C-Central'     -29        -15    
+ -12          'L_UnFortLenis'     -14        -16    
+ -13            'R_C-Central'  "ST_o_3_8"     -28    
+ -14                    'L_k'     -21     "ST_o_3_19" 
+ -15               'R_Liquid'     -30        -32    
+ -16                    'L_y'  "ST_o_3_20"  "ST_o_3_22" 
+ -17                    'L_y'  "ST_o_3_21"  "ST_o_3_22" 
+ -18                    'R_n'  "ST_o_3_6"  "ST_o_3_7" 
+ -19        'R_Unvoiced-Stop'     -24     "ST_o_3_25" 
+ -20             'R_Syllabic'     -26     "ST_o_3_29" 
+ -21           'R_UnStrident'  "ST_o_3_24"  "ST_o_3_18" 
+ -22            'R_Back-Stop'  "ST_o_3_13"  "ST_o_3_14" 
+ -23          'R_UnFortLenis'     -27     "ST_o_3_12" 
+ -24              'L_C-Front'  "ST_o_3_23"  "ST_o_3_24" 
+ -25             'R_Anterior'  "ST_o_3_21"  "ST_o_3_17" 
+ -26               'R_Fortis'  "ST_o_3_27"  "ST_o_3_28" 
+ -27                    'R_d'     -31     "ST_o_3_12" 
+ -28          'R_Voiced-Stop'  "ST_o_3_9"  "ST_o_3_13" 
+ -29                    'R_k'  "ST_o_3_1"  "ST_o_3_2" 
+ -30                'R_Nasal'  "ST_o_3_5"  "ST_o_3_3" 
+ -31            'R_C-Central'  "ST_o_3_10"  "ST_o_3_11" 
+ -32             'R_Anterior'  "ST_o_3_4"  "ST_o_3_5" 
+ -33             'R_Syllabic'  "ST_o_3_15"  "ST_o_3_16" 
+}
+
+oi[3]
+   "ST_oi_3_1"
+
+p[3]
+{
+   0                'L_Nasal'      -1         -4    
+  -1          'L_NonBoundary'  "ST_p_3_1"      -2    
+  -2               'L_Fortis'      -3     "ST_p_3_5" 
+  -3               'R_Fortis'      -5     "ST_p_3_4" 
+  -4              'L_C-Front'  "ST_p_3_6"  "ST_p_3_7" 
+  -5                 'R_Stop'      -6     "ST_p_3_4" 
+  -6            'R_C-Central'  "ST_p_3_2"  "ST_p_3_3" 
+}
+
+q[3]
+   "ST_q_3_1"
+
+r[3]
+{
+   0                 'R_Stop'      -1         -4    
+  -1          'L_NonBoundary'  "ST_r_3_1"      -2    
+  -2               'L_Fortis'      -3        -10    
+  -3             'R_Anterior'      -5         -7    
+  -4            'R_C-Central'      -6         -9    
+  -5          'R_NonBoundary'  "ST_r_3_2"      -8    
+  -6               'R_Fortis'     -12        -13    
+  -7            'R_Fricative'     -11     "ST_r_3_7" 
+  -8           'L_UnStrident'     -15        -14    
+  -9               'R_Fortis'  "ST_r_3_14"  "ST_r_3_15" 
+ -10              'L_C-Front'  "ST_r_3_8"  "ST_r_3_9" 
+ -11                    'R_m'  "ST_r_3_5"  "ST_r_3_6" 
+ -12              'R_C-Front'  "ST_r_3_10"  "ST_r_3_11" 
+ -13              'R_C-Front'  "ST_r_3_12"  "ST_r_3_13" 
+ -14                 'L_Stop'  "ST_r_3_4"  "ST_r_3_9" 
+ -15                    'R_y'  "ST_r_3_3"  "ST_r_3_5" 
+}
+
+s[3]
+{
+   0          'R_NonBoundary'      -9         -1    
+  -1          'L_NonBoundary'  "ST_s_3_3"      -2    
+  -2           'R_UnStrident'      -3         -4    
+  -3             'L_Anterior'      -5         -6    
+  -4                    'R_t'      -8     "ST_s_3_15" 
+  -5               'L_Fortis'      -7     "ST_s_3_7" 
+  -6                'L_Nasal'     -10     "ST_s_3_11" 
+  -7          'L_UnFortLenis'     -11        -14    
+  -8              'R_C-Front'     -13     "ST_s_3_14" 
+  -9           'L_UnStrident'  "ST_s_3_1"     -12    
+ -10                    'L_s'     -15     "ST_s_3_10" 
+ -11            'R_C-Central'  "ST_s_3_4"  "ST_s_3_13" 
+ -12                    'L_n'  "ST_s_3_15"  "ST_s_3_2" 
+ -13         'R_Central-Stop'     -16     "ST_s_3_13" 
+ -14                'L_Nasal'  "ST_s_3_5"  "ST_s_3_6" 
+ -15                    'L_t'  "ST_s_3_8"  "ST_s_3_9" 
+ -16                    'R_y'  "ST_s_3_12"  "ST_s_3_14" 
+}
+
+sy[3]
+   "ST_sy_3_1"
+
+t[3]
+{
+   0                    'L_n'      -1     "ST_t_3_11" 
+  -1          'L_NonBoundary'  "ST_t_3_1"      -2    
+  -2               'L_Fortis'      -3         -8    
+  -3             'R_Anterior'      -4         -7    
+  -4          'R_NonBoundary'  "ST_t_3_8"      -5    
+  -5               'R_Fortis'      -6     "ST_t_3_6" 
+  -6           'L_UnStrident'  "ST_t_3_2"      -9    
+  -7                 'R_Stop'     -10        -11    
+  -8             'L_Strident'  "ST_t_3_9"  "ST_t_3_10" 
+  -9                    'L_r'  "ST_t_3_3"  "ST_t_3_4" 
+ -10            'R_Fricative'  "ST_t_3_5"  "ST_t_3_6" 
+ -11               'R_Fortis'  "ST_t_3_7"  "ST_t_3_8" 
+}
+
+u[3]
+{
+   0           'L_NonCoronal'      -1         -2    
+  -1           'R_NonCoronal'      -3         -5    
+  -2            'R_C-Central'      -7         -6    
+  -3               'L_Fortis'      -4        -13    
+  -4               'L_Liquid'      -8        -12    
+  -5          'L_UnFortLenis'     -10        -26    
+  -6          'L_UnFortLenis'      -9        -16    
+  -7           'R_NonCoronal'     -17        -19    
+  -8                 'L_Stop'     -14        -11    
+  -9             'R_Syllabic'     -18        -39    
+ -10            'R_Back-Stop'     -24        -15    
+ -11            'R_C-Central'  "ST_u_3_8"     -62    
+ -12             'L_Anterior'     -23        -37    
+ -13            'R_C-Central'     -22        -20    
+ -14          'R_NonAnterior'     -21        -32    
+ -15               'R_Fortis'  "ST_u_3_29"     -29    
+ -16                    'L_y'     -28     "ST_u_3_62" 
+ -17             'L_Syllabic'     -34     "ST_u_3_42" 
+ -18              'L_C-Front'     -38        -33    
+ -19          'L_UnFortLenis'     -25     "ST_u_3_49" 
+ -20        'R_Unvoiced-Fric'     -27        -65    
+ -21                'R_Nasal'     -31        -30    
+ -22          'R_NonBoundary'  "ST_u_3_28"     -49    
+ -23               'R_Fortis'     -60        -46    
+ -24            'L_C-Central'     -41        -36    
+ -25              'L_C-Front'     -45        -35    
+ -26             'L_Anterior'     -48        -64    
+ -27                 'L_Stop'     -47        -51    
+ -28          'R_UnFortLenis'  "ST_u_3_60"     -44    
+ -29               'L_Fortis'     -54     "ST_u_3_32" 
+ -30          'L_NonBoundary'  "ST_u_3_4"  "ST_u_3_5" 
+ -31            'L_C-Central'     -40        -50    
+ -32                'L_Nasal'  "ST_u_3_6"  "ST_u_3_7" 
+ -33               'L_Fortis'     -42        -63    
+ -34                    'L_b'     -53     "ST_u_3_41" 
+ -35               'L_Fortis'     -55     "ST_u_3_48" 
+ -36        'L_Unvoiced-Stop'     -52        -56    
+ -37          'R_NonAnterior'  "ST_u_3_14"  "ST_u_3_15" 
+ -38               'R_Fortis'     -43     "ST_u_3_51" 
+ -39               'L_Fortis'  "ST_u_3_57"     -59    
+ -40               'R_Fortis'     -57     "ST_u_3_3" 
+ -41                'R_Nasal'  "ST_u_3_23"  "ST_u_3_24" 
+ -42        'R_Unvoiced-Stop'     -66     "ST_u_3_54" 
+ -43               'R_Liquid'  "ST_u_3_58"  "ST_u_3_50" 
+ -44             'L_Syllabic'  "ST_u_3_60"  "ST_u_3_61" 
+ -45               'L_Fortis'  "ST_u_3_43"     -58    
+ -46                 'R_Stop'  "ST_u_3_12"  "ST_u_3_13" 
+ -47               'R_Liquid'  "ST_u_3_18"  "ST_u_3_19" 
+ -48                    'R_b'     -61     "ST_u_3_35" 
+ -49                 'L_Stop'  "ST_u_3_16"  "ST_u_3_17" 
+ -50                'L_Nasal'  "ST_u_3_62"  "ST_u_3_37" 
+ -51                 'R_Stop'  "ST_u_3_19"  "ST_u_3_20" 
+ -52                 'L_Stop'  "ST_u_3_25"  "ST_u_3_26" 
+ -53                'L_Lenis'     -67     "ST_u_3_40" 
+ -54                 'L_Stop'  "ST_u_3_30"  "ST_u_3_31" 
+ -55                    'R_k'  "ST_u_3_46"  "ST_u_3_47" 
+ -56                'R_Lenis'  "ST_u_3_27"  "ST_u_3_28" 
+ -57           'R_UnStrident'  "ST_u_3_1"  "ST_u_3_2" 
+ -58                    'R_k'  "ST_u_3_44"  "ST_u_3_45" 
+ -59              'L_C-Front'  "ST_u_3_58"  "ST_u_3_59" 
+ -60           'R_UnStrident'  "ST_u_3_10"  "ST_u_3_11" 
+ -61                'R_Nasal'  "ST_u_3_33"  "ST_u_3_34" 
+ -62             'R_Syllabic'  "ST_u_3_9"  "ST_u_3_15" 
+ -63                'R_Nasal'  "ST_u_3_55"  "ST_u_3_56" 
+ -64                'L_Nasal'  "ST_u_3_36"  "ST_u_3_37" 
+ -65                 'L_Stop'  "ST_u_3_21"  "ST_u_3_22" 
+ -66                 'R_Stop'  "ST_u_3_52"  "ST_u_3_53" 
+ -67            'L_Back-Stop'  "ST_u_3_38"  "ST_u_3_39" 
+}
+
+w[3]
+{
+   0             'L_Anterior'      -1     "ST_w_3_4" 
+  -1          'L_NonBoundary'  "ST_w_3_1"      -2    
+  -2          'L_NonAnterior'  "ST_w_3_2"      -3    
+  -3               'L_Liquid'  "ST_w_3_4"  "ST_w_3_3" 
+}
+
+y[3]
+{
+   0           'L_UnStrident'      -1         -3    
+  -1          'L_NonBoundary'  "ST_y_3_1"      -2    
+  -2               'L_Fortis'  "ST_y_3_2"  "ST_y_3_4" 
+  -3               'L_Liquid'  "ST_y_3_3"  "ST_y_3_4" 
+}
+
+z[3]
+   "ST_z_3_1"
+
+a[4]
+{
+   0                'R_Nasal'      -1         -4    
+  -1        'R_Unvoiced-Stop'      -2         -6    
+  -2          'R_NonBoundary'     -40         -3    
+  -3          'R_Voiced-Cons'      -7         -5    
+  -4            'R_C-Central'     -11        -24    
+  -5               'R_Liquid'      -9         -8    
+  -6              'R_C-Front'     -13        -14    
+  -7            'R_Fricative'     -20        -21    
+  -8                    'R_r'     -10        -25    
+  -9            'R_C-Central'     -12        -16    
+ -10               'R_C-Back'     -15        -33    
+ -11              'R_C-Front'     -22        -30    
+ -12              'R_C-Front'     -18        -38    
+ -13            'R_C-Central'     -19        -42    
+ -14          'L_NonBoundary'  "ST_a_4_66"     -57    
+ -15                    'L_d'     -17     "ST_a_4_43" 
+ -16           'L_Front-Stop'     -37     "ST_a_4_34" 
+ -17              'R_C-Front'     -23        -35    
+ -18           'L_Front-Stop'     -60     "ST_a_4_25" 
+ -19              'L_C-Front'     -26        -66    
+ -20             'L_Anterior'     -77        -31    
+ -21              'R_C-Front'     -27     "ST_a_4_21" 
+ -22                    'L_y'     -58     "ST_a_4_74" 
+ -23                    'L_k'     -53     "ST_a_4_39" 
+ -24          'L_Voiced-Stop'     -28       -106    
+ -25          'L_Voiced-Stop'     -79        -99    
+ -26          'L_Voiced-Stop'     -41     "ST_a_4_56" 
+ -27                'L_Lenis'     -44     "ST_a_4_20" 
+ -28            'L_Back-Stop'     -29     "ST_a_4_89" 
+ -29                'L_Nasal'     -36        -56    
+ -30                    'L_n'     -39     "ST_a_4_80" 
+ -31                    'L_b'     -32     "ST_a_4_14" 
+ -32                    'L_s'     -43     "ST_a_4_13" 
+ -33           'L_Front-Stop'     -34     "ST_a_4_47" 
+ -34             'L_Strident'     -51     "ST_a_4_46" 
+ -35          'L_Voiced-Stop'     -72     "ST_a_4_42" 
+ -36            'L_C-Central'     -52        -88    
+ -37             'L_Anterior'     -46        -67    
+ -38               'L_C-Back'     -45        -92    
+ -39                    'L_l'     -62     "ST_a_4_79" 
+ -40           'L_UnStrident'     -59        -71    
+ -41          'L_NonBoundary'  "ST_a_4_52"     -63    
+ -42             'L_Anterior'     -48        -50    
+ -43                    'L_l'     -47     "ST_a_4_12" 
+ -44              'L_C-Front'     -55        -85    
+ -45              'L_Rounded'     -74     "ST_a_4_27" 
+ -46               'L_Fortis'     -49     "ST_a_4_34" 
+ -47              'L_C-Front'     -84       -107    
+ -48          'L_NonAnterior'  "ST_a_4_61"     -90    
+ -49          'L_NonBoundary'  "ST_a_4_30"     -73    
+ -50                'L_Lenis'     -61     "ST_a_4_65" 
+ -51                'L_Lenis'     -54     "ST_a_4_46" 
+ -52              'L_C-Front'     -83        -91    
+ -53           'L_Front-Stop'     -81     "ST_a_4_38" 
+ -54             'L_Syllabic'    -108     "ST_a_4_47" 
+ -55               'L_Liquid'     -95       -100    
+ -56            'L_C-Central'    -111     "ST_a_4_88" 
+ -57          'L_Voiced-Stop'     -69        -64    
+ -58                'L_Lenis'  "ST_a_4_71"     -94    
+ -59            'L_Fricative'  "ST_a_4_1"  "ST_a_4_4" 
+ -60                    'L_r'     -65     "ST_a_4_24" 
+ -61                'L_Nasal'     -78     "ST_a_4_64" 
+ -62                    'L_k'     -86     "ST_a_4_78" 
+ -63            'L_C-Central'  "ST_a_4_53"     -68    
+ -64              'L_C-Front'  "ST_a_4_69"  "ST_a_4_70" 
+ -65            'L_C-Central'  "ST_a_4_22"  "ST_a_4_23" 
+ -66        'L_Unvoiced-Stop'     -80     "ST_a_4_59" 
+ -67                    'L_l'     -82     "ST_a_4_45" 
+ -68             'L_Syllabic'     -93     "ST_a_4_58" 
+ -69                 'L_Stop'     -70     "ST_a_4_68" 
+ -70            'L_C-Central'  "ST_a_4_67"    -105    
+ -71              'L_C-Front'     -75       -110    
+ -72            'L_C-Central'  "ST_a_4_40"  "ST_a_4_41" 
+ -73          'L_NonAnterior'  "ST_a_4_31"  "ST_a_4_32" 
+ -74                    'L_n'    -101     "ST_a_4_26" 
+ -75                'L_Lenis'     -76     "ST_a_4_3" 
+ -76                    'L_y'  "ST_a_4_2"  "ST_a_4_3" 
+ -77          'L_UnFortLenis'  "ST_a_4_6"    -109    
+ -78              'L_C-Front'  "ST_a_4_62"  "ST_a_4_63" 
+ -79              'L_C-Front'    -104     "ST_a_4_49" 
+ -80                'L_Nasal'  "ST_a_4_57"  "ST_a_4_58" 
+ -81            'L_C-Central'     -87        -89    
+ -82                'L_Nasal'  "ST_a_4_32"  "ST_a_4_33" 
+ -83               'L_Liquid'  "ST_a_4_81"  "ST_a_4_82" 
+ -84          'L_Voiced-Stop'    -102     "ST_a_4_9" 
+ -85               'L_Fortis'  "ST_a_4_18"  "ST_a_4_19" 
+ -86             'L_Syllabic'     -96     "ST_a_4_77" 
+ -87              'L_Rounded'  "ST_a_4_35"  "ST_a_4_36" 
+ -88               'L_Liquid'  "ST_a_4_84"  "ST_a_4_85" 
+ -89             'L_Syllabic'  "ST_a_4_37"  "ST_a_4_38" 
+ -90                    'L_y'     -98     "ST_a_4_61" 
+ -91               'L_Liquid'  "ST_a_4_90"  "ST_a_4_83" 
+ -92               'L_Fortis'  "ST_a_4_28"  "ST_a_4_29" 
+ -93                'L_Nasal'  "ST_a_4_54"  "ST_a_4_55" 
+ -94              'L_C-Front'  "ST_a_4_72"  "ST_a_4_73" 
+ -95               'L_C-Back'     -97     "ST_a_4_19" 
+ -96            'L_C-Central'  "ST_a_4_75"  "ST_a_4_76" 
+ -97           'L_UnStrident'  "ST_a_4_15"  "ST_a_4_16" 
+ -98                'L_Lenis'  "ST_a_4_60"  "ST_a_4_65" 
+ -99              'L_C-Front'  "ST_a_4_50"  "ST_a_4_51" 
+ -100            'L_C-Central'  "ST_a_4_20"  "ST_a_4_17" 
+ -101                    'L_b'    -103     "ST_a_4_69" 
+ -102                'L_Nasal'  "ST_a_4_7"  "ST_a_4_8" 
+ -103              'L_C-Front'  "ST_a_4_28"  "ST_a_4_29" 
+ -104            'L_C-Central'  "ST_a_4_51"  "ST_a_4_48" 
+ -105                'L_Nasal'  "ST_a_4_68"  "ST_a_4_67" 
+ -106            'L_C-Central'  "ST_a_4_90"  "ST_a_4_91" 
+ -107               'L_Fortis'  "ST_a_4_10"  "ST_a_4_11" 
+ -108         'L_Central-Stop'  "ST_a_4_44"  "ST_a_4_45" 
+ -109                    'L_y'  "ST_a_4_11"  "ST_a_4_24" 
+ -110               'L_Fortis'  "ST_a_4_4"  "ST_a_4_5" 
+ -111              'L_C-Front'  "ST_a_4_86"  "ST_a_4_87" 
+}
+
+au[4]
+{
+   0                    'L_l'      -1         -2    
+  -1            'L_Fricative'  "ST_au_4_1"  "ST_au_4_3" 
+  -2            'R_C-Central'  "ST_au_4_2"  "ST_au_4_3" 
+}
+
+ai[4]
+{
+   0                'R_Nasal'      -1         -2    
+  -1                    'R_s'      -3         -4    
+  -2                    'L_g'      -5     "ST_ai_4_8" 
+  -3                 'R_Stop'      -7         -6    
+  -4          'L_Voiced-Cons'  "ST_ai_4_6"  "ST_ai_4_5" 
+  -5             'L_Syllabic'  "ST_ai_4_6"  "ST_ai_4_7" 
+  -6                    'R_k'  "ST_ai_4_3"  "ST_ai_4_4" 
+  -7                    'L_g'  "ST_ai_4_1"  "ST_ai_4_2" 
+}
+
+b[4]
+{
+   0             'R_Anterior'      -1         -5    
+  -1                    'L_m'      -2     "ST_b_4_3" 
+  -2          'R_NonAnterior'      -3     "ST_b_4_5" 
+  -3          'L_NonBoundary'  "ST_b_4_2"      -4    
+  -4           'L_UnStrident'  "ST_b_4_1"  "ST_b_4_2" 
+  -5                    'R_l'  "ST_b_4_4"  "ST_b_4_5" 
+}
+
+c[4]
+   "ST_c_4_1"
+
+d[4]
+{
+   0                    'L_n'      -1     "ST_d_4_5" 
+  -1             'R_Anterior'      -2     "ST_d_4_4" 
+  -2                   'L_ng'      -3     "ST_d_4_3" 
+  -3          'L_NonBoundary'  "ST_d_4_2"      -4    
+  -4               'L_Fortis'      -5     "ST_d_4_2" 
+  -5          'R_NonAnterior'  "ST_d_4_1"  "ST_d_4_4" 
+}
+
+@[4]
+{
+   0          'R_UnFortLenis'      -2         -1    
+  -1                'R_Nasal'      -6         -3    
+  -2           'R_Front-Stop'      -5         -7    
+  -3            'R_C-Central'      -4        -11    
+  -4              'L_C-Front'     -14        -12    
+  -5        'R_Unvoiced-Stop'      -8        -13    
+  -6          'L_Voiced-Cons'     -10        -15    
+  -7               'R_Fortis'     -25        -21    
+  -8                    'R_s'      -9        -23    
+  -9                    'L_b'     -16     "ST_@_4_8" 
+ -10             'R_Anterior'     -19        -30    
+ -11              'L_C-Front'     -31        -32    
+ -12                'L_Nasal'     -40        -20    
+ -13        'L_Unvoiced-Stop'     -49        -35    
+ -14              'R_C-Front'     -28        -27    
+ -15                    'R_r'     -33        -18    
+ -16                 'R_Stop'     -17        -29    
+ -17              'L_C-Front'     -41        -48    
+ -18                    'L_m'     -22     "ST_@_4_36" 
+ -19           'L_Front-Stop'     -24     "ST_@_4_27" 
+ -20              'R_C-Front'  "ST_@_4_44"  "ST_@_4_45" 
+ -21        'L_Unvoiced-Stop'     -43     "ST_@_4_24" 
+ -22              'L_C-Front'     -39     "ST_@_4_35" 
+ -23            'L_Fricative'     -26     "ST_@_4_13" 
+ -24         'L_Central-Stop'  "ST_@_4_25"  "ST_@_4_26" 
+ -25                 'L_Stop'     -52        -44    
+ -26           'L_UnStrident'  "ST_@_4_9"     -47    
+ -27                    'L_k'     -36     "ST_@_4_41" 
+ -28                'L_Lenis'  "ST_@_4_37"  "ST_@_4_38" 
+ -29                    'L_n'     -34     "ST_@_4_7" 
+ -30               'L_Fortis'  "ST_@_4_30"     -37    
+ -31                    'L_r'     -38     "ST_@_4_48" 
+ -32                'L_Nasal'  "ST_@_4_49"  "ST_@_4_50" 
+ -33                    'L_m'     -46     "ST_@_4_32" 
+ -34            'R_C-Central'     -51     "ST_@_4_6" 
+ -35               'L_C-Back'  "ST_@_4_16"     -42    
+ -36           'L_UnStrident'  "ST_@_4_39"  "ST_@_4_40" 
+ -37            'L_C-Central'  "ST_@_4_28"  "ST_@_4_29" 
+ -38               'L_Fortis'  "ST_@_4_46"  "ST_@_4_47" 
+ -39            'L_Back-Stop'     -45     "ST_@_4_34" 
+ -40              'R_C-Front'  "ST_@_4_42"  "ST_@_4_43" 
+ -41               'L_C-Back'     -55     "ST_@_4_2" 
+ -42            'R_C-Central'  "ST_@_4_16"  "ST_@_4_17" 
+ -43           'L_Continuent'  "ST_@_4_22"  "ST_@_4_23" 
+ -44               'L_C-Back'  "ST_@_4_20"  "ST_@_4_21" 
+ -45                'L_Lenis'  "ST_@_4_36"  "ST_@_4_33" 
+ -46           'L_Front-Stop'  "ST_@_4_30"  "ST_@_4_31" 
+ -47           'L_Front-Stop'     -54     "ST_@_4_12" 
+ -48                 'L_Stop'  "ST_@_4_3"  "ST_@_4_4" 
+ -49         'L_Central-Stop'     -50     "ST_@_4_15" 
+ -50            'R_C-Central'     -53     "ST_@_4_14" 
+ -51         'L_Central-Stop'  "ST_@_4_20"  "ST_@_4_5" 
+ -52          'L_Voiced-Cons'  "ST_@_4_18"  "ST_@_4_19" 
+ -53            'L_Unrounded'  "ST_@_4_15"  "ST_@_4_14" 
+ -54              'L_C-Front'  "ST_@_4_10"  "ST_@_4_11" 
+ -55            'L_Fricative'  "ST_@_4_1"  "ST_@_4_2" 
+}
+
+e[4]
+{
+   0          'R_UnFortLenis'      -1         -2    
+  -1               'R_Fortis'      -6         -4    
+  -2                'R_Nasal'      -3        -11    
+  -3                    'L_b'     -13        -31    
+  -4                 'R_Stop'      -5         -9    
+  -5                    'L_b'     -10     "ST_e_4_15" 
+  -6          'R_NonBoundary'  "ST_e_4_1"      -7    
+  -7                    'L_d'      -8     "ST_e_4_10" 
+  -8                    'L_n'     -12        -25    
+  -9               'R_C-Back'     -21        -23    
+ -10                    'L_n'     -29     "ST_e_4_14" 
+ -11                    'L_m'     -15     "ST_e_4_40" 
+ -12           'R_NonCoronal'     -14        -18    
+ -13              'R_C-Front'     -17        -20    
+ -14                 'R_Stop'     -16        -27    
+ -15            'R_C-Central'     -34        -33    
+ -16                    'L_p'     -24     "ST_e_4_4" 
+ -17                    'R_r'     -19        -26    
+ -18                    'L_b'     -45     "ST_e_4_7" 
+ -19                    'L_t'     -36     "ST_e_4_25" 
+ -20                'L_Lenis'  "ST_e_4_31"  "ST_e_4_32" 
+ -21              'R_C-Front'     -22        -28    
+ -22                'L_Lenis'  "ST_e_4_16"  "ST_e_4_17" 
+ -23                    'L_t'     -39     "ST_e_4_23" 
+ -24                    'L_k'     -38     "ST_e_4_3" 
+ -25               'R_C-Back'  "ST_e_4_8"  "ST_e_4_9" 
+ -26           'L_UnStrident'     -30        -32    
+ -27              'L_C-Front'     -46        -41    
+ -28                'L_Lenis'  "ST_e_4_18"  "ST_e_4_19" 
+ -29          'L_NonBoundary'  "ST_e_4_11"     -40    
+ -30                    'L_s'  "ST_e_4_26"  "ST_e_4_27" 
+ -31             'R_Syllabic'  "ST_e_4_33"  "ST_e_4_34" 
+ -32                    'L_r'     -42     "ST_e_4_30" 
+ -33              'L_C-Front'  "ST_e_4_38"  "ST_e_4_39" 
+ -34              'R_C-Front'  "ST_e_4_35"     -35    
+ -35            'L_C-Central'  "ST_e_4_36"  "ST_e_4_37" 
+ -36            'R_C-Central'  "ST_e_4_24"     -37    
+ -37                'L_Nasal'  "ST_e_4_31"  "ST_e_4_27" 
+ -38                    'L_l'  "ST_e_4_24"  "ST_e_4_2" 
+ -39           'L_Continuent'  "ST_e_4_20"     -43    
+ -40              'R_C-Front'     -47        -44    
+ -41                'L_Lenis'  "ST_e_4_6"  "ST_e_4_10" 
+ -42                'L_Nasal'  "ST_e_4_28"  "ST_e_4_29" 
+ -43            'L_Unrounded'  "ST_e_4_21"  "ST_e_4_22" 
+ -44             'L_Anterior'  "ST_e_4_21"  "ST_e_4_13" 
+ -45                 'L_Stop'  "ST_e_4_6"  "ST_e_4_17" 
+ -46          'L_Voiced-Stop'  "ST_e_4_5"  "ST_e_4_8" 
+ -47           'L_Continuent'  "ST_e_4_12"  "ST_e_4_13" 
+}
+
+f[4]
+{
+   0           'L_Continuent'      -1     "ST_f_4_3" 
+  -1                 'R_Stop'      -2     "ST_f_4_2" 
+  -2          'R_NonBoundary'  "ST_f_4_2"  "ST_f_4_1" 
+}
+
+g[4]
+{
+   0                   'L_ng'      -1     "ST_g_4_3" 
+  -1           'R_UnStrident'  "ST_g_4_1"  "ST_g_4_2" 
+}
+
+h[4]
+{
+   0                 'R_Stop'      -1         -7    
+  -1          'R_NonBoundary'  "ST_h_4_1"      -2    
+  -2           'R_Continuent'      -3         -4    
+  -3          'L_NonBoundary'  "ST_h_4_4"      -5    
+  -4                    'R_m'      -8     "ST_h_4_9" 
+  -5            'L_C-Central'      -6        -10    
+  -6             'L_Syllabic'     -12     "ST_h_4_3" 
+  -7               'R_Fortis'  "ST_h_4_10"     -13    
+  -8                    'R_y'      -9     "ST_h_4_8" 
+  -9                    'R_s'  "ST_h_4_6"  "ST_h_4_7" 
+ -10             'L_Syllabic'     -11     "ST_h_4_10" 
+ -11               'L_Liquid'  "ST_h_4_4"  "ST_h_4_5" 
+ -12                'L_Nasal'  "ST_h_4_2"  "ST_h_4_5" 
+ -13              'R_C-Front'  "ST_h_4_11"  "ST_h_4_12" 
+}
+
+i[4]
+{
+   0          'R_UnFortLenis'      -1         -4    
+  -1          'R_NonBoundary'     -17         -2    
+  -2        'R_Unvoiced-Stop'      -3         -6    
+  -3            'R_Fricative'      -5        -14    
+  -4                'R_Nasal'      -8         -9    
+  -5                 'R_Stop'     -19         -7    
+  -6               'R_C-Back'     -12        -35    
+  -7         'L_Central-Stop'     -10        -13    
+  -8            'R_C-Central'     -26        -15    
+  -9            'R_C-Central'     -11        -21    
+ -10              'R_C-Front'     -23        -28    
+ -11              'R_C-Front'     -32        -25    
+ -12              'R_C-Front'     -22        -34    
+ -13              'R_C-Front'     -18        -27    
+ -14              'R_C-Front'     -16     "ST_i_4_23" 
+ -15             'R_Anterior'     -44        -29    
+ -16              'L_C-Front'     -48        -39    
+ -17                'L_Nasal'  "ST_i_4_1"  "ST_i_4_2" 
+ -18            'R_C-Central'  "ST_i_4_14"     -36    
+ -19          'L_NonBoundary'  "ST_i_4_3"     -20    
+ -20                 'L_Stop'     -33        -38    
+ -21          'L_NonBoundary'  "ST_i_4_46"     -41    
+ -22                'L_Nasal'     -24     "ST_i_4_27" 
+ -23            'L_C-Central'     -47        -42    
+ -24                    'L_k'     -40     "ST_i_4_26" 
+ -25                    'L_p'     -31     "ST_i_4_45" 
+ -26              'R_C-Front'  "ST_i_4_33"  "ST_i_4_34" 
+ -27               'L_Fortis'  "ST_i_4_17"  "ST_i_4_18" 
+ -28           'L_UnStrident'  "ST_i_4_34"     -50    
+ -29               'L_Fortis'     -37        -30    
+ -30              'L_C-Front'  "ST_i_4_39"  "ST_i_4_40" 
+ -31                    'L_l'     -45     "ST_i_4_44" 
+ -32                'L_Lenis'  "ST_i_4_41"  "ST_i_4_46" 
+ -33               'L_Fortis'     -51     "ST_i_4_7" 
+ -34                    'L_d'     -49     "ST_i_4_30" 
+ -35                'L_Nasal'  "ST_i_4_31"  "ST_i_4_32" 
+ -36               'L_Fortis'  "ST_i_4_15"  "ST_i_4_16" 
+ -37         'L_Central-Stop'     -43     "ST_i_4_38" 
+ -38                    'L_d'     -54     "ST_i_4_9" 
+ -39                'L_Lenis'  "ST_i_4_21"  "ST_i_4_22" 
+ -40           'L_UnStrident'  "ST_i_4_24"  "ST_i_4_25" 
+ -41                    'L_p'     -52     "ST_i_4_48" 
+ -42                'L_Nasal'     -46     "ST_i_4_12" 
+ -43                    'L_m'  "ST_i_4_37"  "ST_i_4_40" 
+ -44           'L_Continuent'  "ST_i_4_35"  "ST_i_4_36" 
+ -45                'L_Nasal'  "ST_i_4_42"  "ST_i_4_43" 
+ -46            'R_C-Central'  "ST_i_4_31"  "ST_i_4_11" 
+ -47                 'L_Stop'  "ST_i_4_10"  "ST_i_4_12" 
+ -48               'L_Liquid'  "ST_i_4_19"  "ST_i_4_20" 
+ -49                    'L_r'  "ST_i_4_28"  "ST_i_4_29" 
+ -50             'L_Anterior'  "ST_i_4_17"  "ST_i_4_13" 
+ -51                    'L_l'     -55     "ST_i_4_6" 
+ -52                'L_Nasal'     -53     "ST_i_4_47" 
+ -53           'L_Continuent'  "ST_i_4_47"  "ST_i_4_48" 
+ -54              'L_C-Front'  "ST_i_4_7"  "ST_i_4_8" 
+ -55                    'L_n'  "ST_i_4_4"  "ST_i_4_5" 
+}
+
+j[4]
+   "ST_j_4_1"
+
+k[4]
+{
+   0             'R_Anterior'      -1         -2    
+  -1          'L_NonBoundary'  "ST_k_4_1"      -4    
+  -2                    'R_s'      -3     "ST_k_4_10" 
+  -3        'R_Unvoiced-Stop'      -7        -10    
+  -4          'R_NonBoundary'  "ST_k_4_8"      -5    
+  -5               'R_C-Back'      -6        -11    
+  -6            'L_C-Central'      -8         -9    
+  -7               'R_Liquid'  "ST_k_4_6"  "ST_k_4_7" 
+  -8           'L_NonCoronal'  "ST_k_4_2"  "ST_k_4_3" 
+  -9               'L_Fortis'  "ST_k_4_4"  "ST_k_4_5" 
+ -10              'R_C-Front'  "ST_k_4_8"  "ST_k_4_9" 
+ -11               'R_Fortis'  "ST_k_4_7"  "ST_k_4_9" 
+}
+
+kh[4]
+   "ST_kh_4_1"
+
+l[4]
+{
+   0                 'R_Stop'      -1         -5    
+  -1          'R_NonBoundary'  "ST_l_4_1"      -2    
+  -2          'L_NonBoundary'  "ST_l_4_2"      -3    
+  -3           'R_Continuent'      -4         -6    
+  -4                    'L_l'      -7     "ST_l_4_6" 
+  -5               'R_Fortis'     -10     "ST_l_4_12" 
+  -6               'R_Fortis'      -9     "ST_l_4_9" 
+  -7              'L_C-Front'      -8     "ST_l_4_5" 
+  -8           'L_UnStrident'  "ST_l_4_3"  "ST_l_4_4" 
+  -9                    'R_l'  "ST_l_4_7"  "ST_l_4_8" 
+ -10            'R_C-Central'  "ST_l_4_10"  "ST_l_4_11" 
+}
+
+m[4]
+{
+   0           'R_Front-Stop'      -1         -3    
+  -1          'L_NonBoundary'  "ST_m_4_1"      -2    
+  -2             'L_Anterior'      -4         -6    
+  -3               'R_Fortis'  "ST_m_4_12"  "ST_m_4_13" 
+  -4          'R_NonBoundary'  "ST_m_4_2"      -5    
+  -5             'R_Anterior'      -7         -8    
+  -6        'L_Unvoiced-Stop'     -12     "ST_m_4_11" 
+  -7                'R_Nasal'      -9     "ST_m_4_5" 
+  -8        'R_Unvoiced-Stop'     -11     "ST_m_4_8" 
+  -9          'L_Voiced-Cons'     -10     "ST_m_4_4" 
+ -10               'R_Fortis'  "ST_m_4_3"  "ST_m_4_8" 
+ -11               'L_Liquid'     -13     "ST_m_4_10" 
+ -12               'L_Fortis'  "ST_m_4_9"  "ST_m_4_10" 
+ -13                    'R_l'     -14     "ST_m_4_11" 
+ -14                    'R_s'  "ST_m_4_6"  "ST_m_4_7" 
+}
+
+n[4]
+{
+   0        'R_Unvoiced-Stop'      -1         -5    
+  -1          'R_NonBoundary'  "ST_n_4_1"      -2    
+  -2                'R_Lenis'      -3        -11    
+  -3           'R_Continuent'      -4         -6    
+  -4          'L_NonBoundary'  "ST_n_4_2"     -13    
+  -5               'R_C-Back'      -7     "ST_n_4_16" 
+  -6                'R_Nasal'      -8     "ST_n_4_10" 
+  -7              'R_C-Front'  "ST_n_4_14"  "ST_n_4_15" 
+  -8          'R_NonStrident'      -9     "ST_n_4_9" 
+  -9            'R_C-Central'     -15        -10    
+ -10             'R_Anterior'  "ST_n_4_6"     -12    
+ -11         'R_Central-Stop'     -16     "ST_n_4_13" 
+ -12            'R_Fricative'  "ST_n_4_7"  "ST_n_4_8" 
+ -13            'L_C-Central'  "ST_n_4_3"     -14    
+ -14             'L_Syllabic'     -17     "ST_n_4_12" 
+ -15              'R_C-Front'  "ST_n_4_5"  "ST_n_4_11" 
+ -16               'R_C-Back'  "ST_n_4_11"  "ST_n_4_12" 
+ -17          'L_Voiced-Stop'  "ST_n_4_4"  "ST_n_4_13" 
+}
+
+ng[4]
+{
+   0        'R_Unvoiced-Stop'      -1         -6    
+  -1          'R_NonBoundary'  "ST_ng_4_1"      -2    
+  -2           'R_UnStrident'      -5         -3    
+  -3            'R_Back-Stop'      -4     "ST_ng_4_6" 
+  -4                'R_Nasal'      -7     "ST_ng_4_5" 
+  -5                    'R_s'  "ST_ng_4_3"  "ST_ng_4_2" 
+  -6               'R_C-Back'  "ST_ng_4_7"  "ST_ng_4_8" 
+  -7                 'R_Stop'  "ST_ng_4_3"  "ST_ng_4_4" 
+}
+
+ny[4]
+{
+   0           'L_Continuent'      -2         -1    
+  -1                    'L_n'  "ST_ny_4_3"  "ST_ny_4_4" 
+  -2                    'L_k'      -3     "ST_ny_4_2" 
+  -3               'L_Fortis'  "ST_ny_4_1"  "ST_ny_4_4" 
+}
+
+o[4]
+{
+   0          'R_UnFortLenis'      -1         -2    
+  -1                    'R_t'      -3        -19    
+  -2                    'R_n'      -4        -13    
+  -3               'R_C-Back'      -5        -17    
+  -4            'R_C-Central'     -15         -6    
+  -5                    'R_s'      -7        -25    
+  -6             'R_Anterior'     -24        -10    
+  -7              'L_Rounded'      -8     "ST_o_4_11" 
+  -8          'R_NonBoundary'     -27         -9    
+  -9                'R_Lenis'     -11        -12    
+ -10              'L_C-Front'     -22     "ST_o_4_28" 
+ -11              'R_C-Front'     -18        -34    
+ -12            'L_Unrounded'     -21        -16    
+ -13                    'L_d'     -14     "ST_o_4_32" 
+ -14                 'L_Stop'     -32     "ST_o_4_31" 
+ -15                'R_Nasal'  "ST_o_4_18"     -20    
+ -16              'R_C-Front'  "ST_o_4_8"     -35    
+ -17               'R_Fortis'  "ST_o_4_14"  "ST_o_4_15" 
+ -18                    'L_s'  "ST_o_4_3"  "ST_o_4_4" 
+ -19                    'L_g'  "ST_o_4_16"  "ST_o_4_17" 
+ -20              'R_C-Front'     -30        -23    
+ -21                    'L_n'     -28     "ST_o_4_7" 
+ -22                    'L_n'  "ST_o_4_26"  "ST_o_4_27" 
+ -23                'L_Nasal'     -36     "ST_o_4_21" 
+ -24           'L_NonCoronal'     -31     "ST_o_4_25" 
+ -25           'L_NonCoronal'     -26     "ST_o_4_13" 
+ -26          'L_NonAnterior'  "ST_o_4_12"  "ST_o_4_13" 
+ -27                'L_Nasal'  "ST_o_4_1"  "ST_o_4_2" 
+ -28              'R_C-Front'  "ST_o_4_6"     -29    
+ -29           'L_Front-Stop'  "ST_o_4_9"  "ST_o_4_7" 
+ -30            'L_C-Central'  "ST_o_4_18"  "ST_o_4_19" 
+ -31                 'L_Stop'     -33     "ST_o_4_24" 
+ -32                'L_Nasal'  "ST_o_4_29"  "ST_o_4_30" 
+ -33             'L_Anterior'  "ST_o_4_22"  "ST_o_4_23" 
+ -34                 'R_Stop'  "ST_o_4_12"  "ST_o_4_5" 
+ -35                    'L_l'  "ST_o_4_9"  "ST_o_4_10" 
+ -36           'L_UnStrident'  "ST_o_4_22"  "ST_o_4_20" 
+}
+
+oi[4]
+   "ST_oi_4_1"
+
+p[4]
+{
+   0                 'R_Stop'      -1         -6    
+  -1           'R_Continuent'      -2         -4    
+  -2                    'L_m'      -3     "ST_p_4_4" 
+  -3          'L_NonBoundary'  "ST_p_4_1"      -5    
+  -4               'R_Liquid'  "ST_p_4_5"  "ST_p_4_6" 
+  -5                'L_Nasal'      -7     "ST_p_4_3" 
+  -6                    'R_t'  "ST_p_4_7"  "ST_p_4_8" 
+  -7               'L_Fortis'  "ST_p_4_2"  "ST_p_4_3" 
+}
+
+q[4]
+   "ST_q_4_1"
+
+r[4]
+{
+   0                'R_Lenis'      -1        -12    
+  -1                 'R_Stop'      -2         -7    
+  -2          'R_NonBoundary'  "ST_r_4_1"      -3    
+  -3            'R_Fricative'      -4     "ST_r_4_12" 
+  -4          'L_NonBoundary'  "ST_r_4_2"      -5    
+  -5                    'R_y'      -6     "ST_r_4_11" 
+  -6                'R_Nasal'      -8     "ST_r_4_10" 
+  -7            'R_C-Central'     -16     "ST_r_4_15" 
+  -8              'L_C-Front'      -9        -13    
+  -9                    'L_g'     -10     "ST_r_4_7" 
+ -10           'L_Continuent'     -11        -14    
+ -11                 'L_Stop'     -15     "ST_r_4_5" 
+ -12            'R_C-Central'     -17     "ST_r_4_18" 
+ -13                'L_Lenis'  "ST_r_4_8"  "ST_r_4_9" 
+ -14               'L_Fortis'  "ST_r_4_6"  "ST_r_4_7" 
+ -15            'R_C-Central'  "ST_r_4_3"  "ST_r_4_4" 
+ -16              'R_C-Front'  "ST_r_4_13"  "ST_r_4_14" 
+ -17              'R_C-Front'  "ST_r_4_16"  "ST_r_4_17" 
+}
+
+s[4]
+{
+   0           'R_UnStrident'      -1         -2    
+  -1          'R_NonBoundary'  "ST_s_4_1"      -3    
+  -2         'R_Central-Stop'      -4         -6    
+  -3               'R_Fortis'      -5        -13    
+  -4               'R_Fortis'      -9         -8    
+  -5          'L_NonBoundary'  "ST_s_4_2"      -7    
+  -6               'R_Fortis'     -15     "ST_s_4_14" 
+  -7           'L_UnStrident'  "ST_s_4_3"     -10    
+  -8              'R_C-Front'  "ST_s_4_10"  "ST_s_4_11" 
+  -9              'R_C-Front'     -12        -11    
+ -10               'L_Fortis'  "ST_s_4_4"  "ST_s_4_5" 
+ -11               'R_Liquid'     -16     "ST_s_4_9" 
+ -12            'R_C-Central'  "ST_s_4_9"     -14    
+ -13           'L_UnStrident'  "ST_s_4_13"  "ST_s_4_12" 
+ -14                'R_Nasal'  "ST_s_4_6"  "ST_s_4_7" 
+ -15                    'L_n'  "ST_s_4_12"  "ST_s_4_13" 
+ -16                 'R_Stop'  "ST_s_4_8"  "ST_s_4_11" 
+}
+
+sy[4]
+   "ST_sy_4_1"
+
+t[4]
+{
+   0                 'R_Stop'      -1         -4    
+  -1                    'L_n'      -2     "ST_t_4_9" 
+  -2          'R_NonBoundary'  "ST_t_4_1"      -3    
+  -3             'R_Anterior'      -5         -7    
+  -4               'R_C-Back'      -8     "ST_t_4_12" 
+  -5          'L_NonBoundary'  "ST_t_4_2"      -6    
+  -6                    'L_s'      -9     "ST_t_4_6" 
+  -7            'R_Fricative'  "ST_t_4_7"  "ST_t_4_8" 
+  -8               'R_Fortis'  "ST_t_4_10"  "ST_t_4_11" 
+  -9                    'L_r'     -10     "ST_t_4_5" 
+ -10           'L_UnStrident'  "ST_t_4_3"  "ST_t_4_4" 
+}
+
+u[4]
+{
+   0                 'R_Stop'      -1         -2    
+  -1            'R_C-Central'      -4         -3    
+  -2            'R_C-Central'      -9         -8    
+  -3               'R_Fortis'      -6        -12    
+  -4          'R_NonBoundary'     -39         -5    
+  -5                'R_Nasal'     -10        -19    
+  -6                'R_Nasal'      -7        -14    
+  -7              'L_C-Front'     -13        -23    
+  -8               'R_Fortis'     -24        -27    
+  -9                    'R_b'     -11        -32    
+ -10                    'L_d'     -18     "ST_u_4_10" 
+ -11           'L_NonCoronal'     -16        -29    
+ -12           'L_Continuent'     -26        -33    
+ -13             'R_Anterior'     -15        -45    
+ -14           'L_NonCoronal'     -34        -40    
+ -15                    'L_n'     -35     "ST_u_4_16" 
+ -16               'R_Fortis'  "ST_u_4_32"     -17    
+ -17              'R_C-Front'     -43     "ST_u_4_35" 
+ -18           'L_NonCoronal'     -20        -21    
+ -19                'L_Nasal'     -22     "ST_u_4_14" 
+ -20           'L_Continuent'     -30        -28    
+ -21             'L_Syllabic'     -36     "ST_u_4_9" 
+ -22              'R_C-Front'  "ST_u_4_11"     -31    
+ -23             'R_Syllabic'  "ST_u_4_20"     -48    
+ -24             'L_Strident'     -25     "ST_u_4_45" 
+ -25            'L_C-Central'  "ST_u_4_42"     -50    
+ -26            'L_C-Central'  "ST_u_4_27"  "ST_u_4_30" 
+ -27           'L_NonCoronal'     -42     "ST_u_4_48" 
+ -28               'L_Fortis'     -41     "ST_u_4_5" 
+ -29                    'R_k'  "ST_u_4_41"     -52    
+ -30                 'L_Stop'  "ST_u_4_6"  "ST_u_4_3" 
+ -31        'L_Unvoiced-Stop'  "ST_u_4_12"  "ST_u_4_13" 
+ -32           'L_Continuent'     -49        -44    
+ -33             'L_Strident'     -38     "ST_u_4_31" 
+ -34               'L_Fortis'  "ST_u_4_23"  "ST_u_4_24" 
+ -35        'L_Unvoiced-Stop'  "ST_u_4_15"  "ST_u_4_20" 
+ -36                    'L_b'     -37     "ST_u_4_8" 
+ -37            'L_Back-Stop'  "ST_u_4_6"  "ST_u_4_7" 
+ -38                    'L_l'     -46     "ST_u_4_30" 
+ -39           'L_NonCoronal'  "ST_u_4_1"  "ST_u_4_2" 
+ -40                'L_Nasal'  "ST_u_4_25"  "ST_u_4_26" 
+ -41                'L_Nasal'  "ST_u_4_4"  "ST_u_4_24" 
+ -42             'L_Anterior'  "ST_u_4_46"  "ST_u_4_47" 
+ -43               'L_Fortis'  "ST_u_4_33"  "ST_u_4_34" 
+ -44             'L_Anterior'  "ST_u_4_40"  "ST_u_4_41" 
+ -45                    'L_r'     -47     "ST_u_4_19" 
+ -46            'L_C-Central'  "ST_u_4_28"  "ST_u_4_29" 
+ -47                    'L_k'  "ST_u_4_17"  "ST_u_4_18" 
+ -48                'L_Nasal'  "ST_u_4_21"  "ST_u_4_22" 
+ -49              'L_C-Front'  "ST_u_4_38"  "ST_u_4_39" 
+ -50             'L_Syllabic'     -51     "ST_u_4_44" 
+ -51               'L_Fortis'  "ST_u_4_43"  "ST_u_4_44" 
+ -52        'L_Unvoiced-Stop'  "ST_u_4_36"  "ST_u_4_37" 
+}
+
+w[4]
+{
+   0                 'L_Stop'      -1     "ST_w_4_3" 
+  -1          'L_NonBoundary'  "ST_w_4_1"      -2    
+  -2            'L_C-Central'  "ST_w_4_2"  "ST_w_4_3" 
+}
+
+y[4]
+{
+   0        'L_Unvoiced-Stop'      -1     "ST_y_4_5" 
+  -1               'L_C-Back'      -2     "ST_y_4_4" 
+  -2                    'L_s'      -3     "ST_y_4_3" 
+  -3          'L_NonBoundary'  "ST_y_4_5"      -4    
+  -4                'L_Nasal'      -5     "ST_y_4_2" 
+  -5         'L_Central-Stop'  "ST_y_4_1"  "ST_y_4_3" 
+}
+
+z[4]
+   "ST_z_4_1"
+
